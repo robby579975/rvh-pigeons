@@ -1,0 +1,38 @@
+[
+  {
+    "id": "golden-line",
+    "name": "RVH Golden Line",
+    "ring": "BE24-0000001",
+    "sex": "Cock",
+    "year": "2024",
+    "bloodline": "Foundation Breeder",
+    "image": "assets/images/pigeons/golden-line.svg",
+    "description": "Tijdelijke voorbeeldduif. Vervang later naam, ringnummer, foto en afstamming.",
+    "father": "Foundation Father",
+    "mother": "Foundation Mother"
+  },
+  {
+    "id": "blue-quality",
+    "name": "RVH Blue Quality",
+    "ring": "BE24-0000002",
+    "sex": "Hen",
+    "year": "2024",
+    "bloodline": "Selected Breeding",
+    "image": "assets/images/pigeons/blue-line.svg",
+    "description": "Voorbeeldkaart voor een kweekduif met plaats voor prestaties en familie.",
+    "father": "Elite Cock",
+    "mother": "Golden Hen"
+  },
+  {
+    "id": "future-blood",
+    "name": "RVH Future Blood",
+    "ring": "BE25-0000003",
+    "sex": "Youngster",
+    "year": "2025",
+    "bloodline": "Young Potential",
+    "image": "assets/images/pigeons/future-line.svg",
+    "description": "Plaats voor jonge duiven of toekomstige kweeklijnen.",
+    "father": "RVH Golden Line",
+    "mother": "RVH Blue Quality"
+  }
+]

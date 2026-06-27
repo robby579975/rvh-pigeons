@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Referentie België",
+    "country": "Belgium",
+    "result": "1e prijs / voorbeeldresultaat",
+    "bloodline": "RVH Bloodline",
+    "image": "assets/images/references/reference-belgium.svg"
+  },
+  {
+    "name": "Referentie Nederland",
+    "country": "Netherlands",
+    "result": "Sterke reeks prijzen / voorbeeldresultaat",
+    "bloodline": "RVH Bloodline",
+    "image": "assets/images/references/reference-netherlands.svg"
+  }
+]
