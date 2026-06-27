@@ -1,0 +1,15 @@
+Contactformulier ingesteld
+
+Het formulier is gekoppeld aan:
+https://formspree.io/f/mykqwvaq
+
+Toegevoegd:
+- Bedanktpagina: thank-you.html
+- Honeypot spamveld
+- Verplichte velden voor naam, e-mail en bericht
+
+Test:
+1. Open contact.html
+2. Vul het formulier in
+3. Verzend
+4. Controleer je mailbox/Formspree-dashboard
