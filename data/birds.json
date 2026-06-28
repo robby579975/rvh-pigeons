@@ -1,0 +1,261 @@
+[
+  {
+    "id": "de-verloren-zoon",
+    "name": "De Verloren Zoon",
+    "ring": "BE 23-4093157",
+    "sex": "M",
+    "year": 2023,
+    "family": "Kittel Family",
+    "strain": "Mealy",
+    "breeder": "Gert De Swaef",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_23-4093157_4gen.jpg",
+    "father": "Veile Stickers 069",
+    "mother": "Best-Kittel Duivin",
+    "highlights": [
+      "1e prijs 357 club",
+      "1e prijs 1499 comb.",
+      "Raced only 2 times in 2023",
+      "Best Kittel / Stickers-Donckers influence"
+    ],
+    "description": "De Verloren Zoon is een geselecteerde kweekduif binnen de Kittel Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "best-mama",
+    "name": "Best Mama",
+    "ring": "NL 23-9553089",
+    "sex": "V",
+    "year": 2023,
+    "family": "Kittel Family",
+    "strain": "Grizzle",
+    "breeder": "Soerd Lei",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_23-9553089_4gen.jpg",
+    "father": "Full Brother GBK",
+    "mother": "Best Grizzle",
+    "highlights": [
+      "Mother to 1e 397 b Bierges",
+      "Best Kittel blood",
+      "Grizzle Mama / Gebr. Leideman A&B influence"
+    ],
+    "description": "Best Mama is een geselecteerde kweekduif binnen de Kittel Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "vale-greg",
+    "name": "Vale Greg",
+    "ring": "BE 24-4175806",
+    "sex": "V",
+    "year": 2024,
+    "family": "Kittel Family",
+    "strain": "Mealy W/F",
+    "breeder": "Eddy Den Haese",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_24-4175806_4gen.jpg",
+    "father": "Golden Boy",
+    "mother": "Annabelle",
+    "highlights": [
+      "Kittel, Gold Dust, Goed Grijs, Crack 19",
+      "Dirk Van Den Bulck / Leideman lines"
+    ],
+    "description": "Vale Greg is een geselecteerde kweekduif binnen de Kittel Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "golden-angel-062",
+    "name": "Golden Angel 062",
+    "ring": "NL 24-8630062",
+    "sex": "M",
+    "year": 2024,
+    "family": "Kittel Family",
+    "strain": "Blue pied",
+    "breeder": "Ype Hemstra",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_24-8630062_4gen.jpg",
+    "father": "Blue BK x Gold Dust",
+    "mother": "Pied Angel",
+    "highlights": [
+      "Grandson Blue BK, Gold Dust, Mechant BK and Angelina",
+      "Best breeding sister Kittel in the world"
+    ],
+    "description": "Golden Angel 062 is een geselecteerde kweekduif binnen de Kittel Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "the-one-and-only",
+    "name": "The One & Only",
+    "ring": "GB 24-D85660",
+    "sex": "V",
+    "year": 2024,
+    "family": "Kittel Family",
+    "strain": "Mealy pied",
+    "breeder": "Excelsior Stud",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_24-D85660_4gen.jpg",
+    "father": "Angel Kittel",
+    "mother": "Blizzard Beyl",
+    "highlights": [
+      "Granddaughter Best Kittel II",
+      "Angelina / Blizzard King Kittel family"
+    ],
+    "description": "The One & Only is een geselecteerde kweekduif binnen de Kittel Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "blizzard-white",
+    "name": "Blizzard White",
+    "ring": "GB 24-X22223",
+    "sex": "V",
+    "year": 2024,
+    "family": "Blizzard Family",
+    "strain": "Blue W/F",
+    "breeder": "Excelsior Stud",
+    "image": "assets/images/bloodlines/blizzard.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_24-X22223_4gen.jpg",
+    "father": "Billy Whizz",
+    "mother": "Blizzard Duchess",
+    "highlights": [
+      "DNA certified inbred Blizzard King Kittel",
+      "Phantom Blizzard references"
+    ],
+    "description": "Blizzard White is een geselecteerde kweekduif binnen de Blizzard Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "hendrik",
+    "name": "Hendrik",
+    "ring": "NL 25-1018779",
+    "sex": "M",
+    "year": 2025,
+    "family": "Blizzard Family",
+    "strain": "Grizzle",
+    "breeder": "Hendrik Wilpers",
+    "image": "assets/images/bloodlines/blizzard.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-1018779_4gen.jpg",
+    "father": "Direct Blizzard 025",
+    "mother": "Direct Blizzard 048",
+    "highlights": [
+      "Double grandchild Blizzard King Kittel",
+      "Brother to 24-208 Phantom Blizzard"
+    ],
+    "description": "Hendrik is een geselecteerde kweekduif binnen de Blizzard Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "laurent",
+    "name": "Laurent",
+    "ring": "BE 25-4016900",
+    "sex": "M",
+    "year": 2025,
+    "family": "Sprint Foundation",
+    "strain": "Red",
+    "breeder": "V.D. Stockt Laurent",
+    "image": "assets/images/bloodlines/steven.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-4016900_4gen.jpg",
+    "father": "Basic Breeding Cock",
+    "mother": "Basic Breeding Hen",
+    "highlights": [
+      "Omer Pieters / Stickers-Donckers",
+      "Multiple provincial ace references"
+    ],
+    "description": "Laurent is een geselecteerde kweekduif binnen de Sprint Foundation, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "baloe",
+    "name": "Baloe",
+    "ring": "BE 25-4034025",
+    "sex": "M",
+    "year": 2025,
+    "family": "Leideman Family",
+    "strain": "Grizzle",
+    "breeder": "Eddy Den Haese",
+    "image": "assets/images/bloodlines/leideman.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-4034025_4gen.jpg",
+    "father": "Griezel",
+    "mother": "Aurelie",
+    "highlights": [
+      "Goed Grijs, Viton x DGG 589, Ace 820",
+      "Gebr. Leideman A&B"
+    ],
+    "description": "Baloe is een geselecteerde kweekduif binnen de Leideman Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "robinson",
+    "name": "Robinson",
+    "ring": "BE 25-4034033",
+    "sex": "M",
+    "year": 2025,
+    "family": "Leideman Family",
+    "strain": "Grizzle",
+    "breeder": "Eddy Den Haese",
+    "image": "assets/images/bloodlines/leideman.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-4034033_4gen.jpg",
+    "father": "Grizzle Bert",
+    "mother": "Oumi",
+    "highlights": [
+      "100% Leideman A&B",
+      "Goed Grijs, Ace 820, Crack 19, Raissa, Rachel"
+    ],
+    "description": "Robinson is een geselecteerde kweekduif binnen de Leideman Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "veile-zoon-steven",
+    "name": "Veile Zoon Steven",
+    "ring": "BE 25-4048088",
+    "sex": "M",
+    "year": 2025,
+    "family": "Steven / Van Den Bulck Family",
+    "strain": "Mealy",
+    "breeder": "Gert De Swaef",
+    "image": "assets/images/bloodlines/steven.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-4048088_4gen.jpg",
+    "father": "Steven",
+    "mother": "Veileken Velghe",
+    "highlights": [
+      "Steven: 7 x 1e prize",
+      "La Machine / Liberal / Olympic Kittel"
+    ],
+    "description": "Veile Zoon Steven is een geselecteerde kweekduif binnen de Steven / Van Den Bulck Family, gekozen op afstamming, type en kweekpotentieel."
+  },
+  {
+    "id": "mechant",
+    "name": "Méchant",
+    "ring": "BE 25-4173711",
+    "sex": "M",
+    "year": 2025,
+    "family": "Kittel Family",
+    "strain": "Blue W/F",
+    "breeder": "PIPA Breeding",
+    "image": "assets/images/pigeons/BE25-4173711.jpg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-4173711_4gen.jpg",
+    "father": "Mechant Best Kittel",
+    "mother": "Dght Best Kittel II",
+    "highlights": [
+      "Original PIPA Breeding",
+      "Son of Méchant Best Kittel",
+      "Father: 1e Nat. Acebird Sprint KBDB 2022",
+      "Lowest % ever: 0.58%",
+      "Grandson of Best Kittel II",
+      "Angelina bloodline",
+      "DNA certified"
+    ],
+    "description": "Méchant is een originele PIPA Breeding doffer uit een uitzonderlijke Best Kittel-opbouw. Zijn vader is Méchant Best Kittel, 1e Nationaal Asduif Sprint KBDB 2022 met het laagste percentage ooit: 0,58%. Zijn moeder is een topkweekduivin uit Best Kittel II x Angelina, één van de beste kweekzusters van Kittel ter wereld.",
+    "eye": "assets/images/eyes/BE25-4173711_eye_asset.jpg",
+    "video": "assets/videos/BE25-4173711_98076.mp4",
+    "originalPedigree": "assets/images/pedrees-original/BE25-4173711_ped.jpg",
+    "label": "Son Méchant Best Kittel"
+  },
+  {
+    "id": "fenech",
+    "name": "Fenech",
+    "ring": "GB 25-D54486",
+    "sex": "M",
+    "year": 2025,
+    "family": "Blizzard Family",
+    "strain": "Blue",
+    "breeder": "Bob & Steven Fenech",
+    "image": "assets/images/bloodlines/blizzard.svg",
+    "pedigree": "assets/images/pedigrees/Compustam_25-D54486_4gen.jpg",
+    "father": "Phantom 001",
+    "mother": "Sweet Blizzard",
+    "highlights": [
+      "DNA certified",
+      "Blue Wave Blizzard 5e Nat Ace KBDB 2024"
+    ],
+    "description": "Fenech is een geselecteerde kweekduif binnen de Blizzard Family, gekozen op afstamming, type en kweekpotentieel."
+  }
+]

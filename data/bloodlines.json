@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kittel",
+    "title": "Kittel Family",
+    "image": "assets/images/bloodlines/kittel.svg",
+    "text": "Best Kittel, Golden Dust, Angel Kittel, Mechant Best Kittel en Olympic Rosita."
+  },
+  {
+    "id": "blizzard",
+    "title": "Blizzard Family",
+    "image": "assets/images/bloodlines/blizzard.svg",
+    "text": "Blizzard King Kittel, Phantom Blizzard, Sweet Blizzard en Blue Wave Blizzard."
+  },
+  {
+    "id": "leideman",
+    "title": "Leideman Family",
+    "image": "assets/images/bloodlines/leideman.svg",
+    "text": "Goed Grijs, Ace 820, Viton, Rachel, Crack 19 en Triple 5."
+  },
+  {
+    "id": "steven",
+    "title": "Steven / Van Den Bulck Family",
+    "image": "assets/images/bloodlines/steven.svg",
+    "text": "Steven, Liberal, La Machine, Olympic Kittel, Goede Rode en Dirk Van Den Bulck."
+  }
+]

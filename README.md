@@ -1,21 +1,15 @@
-# RVH Pigeons v0.4
+# RVH Pigeons Premium Release
 
-Nieuwe functies:
-- Echte taalwisseling NL / EN / FR via JSON-bestanden
-- Contactformulier voorbereid voor Formspree
-- Actieve navigatie
-- Vertaalbare placeholders in het formulier
+Dit is geen tussenversie maar een stevigere productie-basis:
+- Premium homepage
+- Méchant als featured breeder
+- Professionele detailpagina met foto, video, oogfoto en pedigrees
+- Dynamische breeders en bloodlines
+- Responsive design
+- Contactformulier via Formspree
 
-Open `index.html` om te testen.
-
-Aanpassen:
-- Teksten vertalen: `languages/nl.json`, `languages/en.json`, `languages/fr.json`
-- Contactformulier activeren: zie `FORMULIER-INSTELLEN.txt`
-- Duiven aanpassen: `data/pigeons.json`
-- Referenties aanpassen: `data/references.json`
-
-
-## v0.4.1
-- Formspree gekoppeld aan https://formspree.io/f/mykqwvaq
-- thank-you.html toegevoegd
-- Honeypot spambeveiliging toegevoegd
+Workflow:
+1. Pak ZIP uit
+2. Kopieer alle bestanden naar je lokale GitHub-map
+3. Commit in GitHub Desktop
+4. Push origin
