@@ -8,13 +8,16 @@
     "origin": "PIPA Breeding",
     "category": "Elite Collection",
     "family": "Kittel / Best Kittel",
-    "badge": "Originele PIPA Breeding",
-    "dna": false,
+    "badge": "PIPA Breeding",
+    "photo": "assets/images/pigeons/mechant.jpg",
+    "eye": "assets/images/eyes/mechant.jpg",
+    "pedigree": "assets/images/pedigrees/mechant.jpg",
+    "video": "assets/videos/mechant.mp4",
+    "dnaFile": "",
     "father": "Méchant Best Kittel",
     "mother": "Dochter Best Kittel II",
-    "order": 1,
     "intro": "Méchant is een originele PIPA Breeding doffer uit een uitzonderlijke Best Kittel-opbouw.",
-    "why": "Deze doffer vormt één van de boegbeelden van RVH Pigeons. Hij combineert Méchant Best Kittel, Best Kittel II en Angelina in één pedigree en past perfect binnen de visie: alleen kwaliteit die 100% overtuigt krijgt een plaats.",
+    "why": "Deze doffer vormt één van de boegbeelden van RVH Pigeons. Hij combineert Méchant Best Kittel, Best Kittel II en Angelina in één pedigree.",
     "highlights": [
       "Zoon van Méchant Best Kittel",
       "Vader: 1e Nationale Asduif Sprint KBDB 2022",
@@ -22,39 +25,34 @@
       "Kleinzoon Best Kittel II",
       "Angelina-bloedlijn"
     ],
-    "photo": "assets/images/pigeons/mechant.jpg",
-    "eye": "assets/images/eyes/mechant-eye.jpg",
-    "pedigree": "assets/images/pedigrees/mechant-ped.jpg",
-    "video": "assets/videos/mechant-video.mp4",
-    "dnaFile": ""
+    "order": 1
   },
   {
-    "id": "one-and-only",
+    "id": "the-one-and-only",
     "name": "The One & Only",
     "ring": "GB24-D85660",
-    "sex": "Doffer",
+    "sex": "Duivin",
     "year": "2024",
     "origin": "Excelsior Stud",
     "category": "Elite Collection",
     "family": "Angel Kittel / Blizzard",
-    "badge": "Original Excelsior Stud",
-    "dna": false,
+    "badge": "Excelsior Stud",
+    "photo": "assets/images/pigeons/the-one-and-only.jpg",
+    "eye": "assets/images/eyes/the-one-and-only.png",
+    "pedigree": "assets/images/pedigrees/the-one-and-only.png",
+    "video": "",
+    "dnaFile": "",
     "father": "Angel Kittel",
     "mother": "Blizzard Beyl",
-    "order": 2,
     "intro": "The One & Only verenigt twee absolute toplijnen: Angel Kittel en Blizzard King Kittel.",
-    "why": "Zijn pedigree brengt Best Kittel II, Olympic Rosita, Angelina en Blizzard King Kittel samen. Dit maakt hem tot een uitzonderlijke bouwsteen binnen RVH Pigeons.",
+    "why": "Haar pedigree brengt Best Kittel II, Olympic Rosita, Angelina en Blizzard King Kittel samen. Dit maakt haar tot een uitzonderlijke bouwsteen binnen RVH Pigeons.",
     "highlights": [
       "Angel Kittel",
       "Best Kittel II",
       "Olympic Rosita",
       "Blizzard King Kittel"
     ],
-    "photo": "assets/images/pigeons/one-and-only.jpg",
-    "eye": "assets/images/eyes/one-and-only-eye.png",
-    "pedigree": "assets/images/pedigrees/one-and-only-ped.png",
-    "video": "",
-    "dnaFile": ""
+    "order": 2
   },
   {
     "id": "golden-angel-062",
@@ -65,11 +63,14 @@
     "origin": "Ype Hemstra",
     "category": "Elite Collection",
     "family": "Kittel / Gold Dust",
-    "badge": "Blue BK × Gold Dust",
-    "dna": false,
+    "badge": "Ype Hemstra",
+    "photo": "assets/images/pigeons/golden-angel-062.jpg",
+    "eye": "assets/images/eyes/golden-angel-062.jpg",
+    "pedigree": "assets/images/pedigrees/golden-angel-062.pdf",
+    "video": "",
+    "dnaFile": "",
     "father": "Blue BK × Gold Dust",
     "mother": "Pied Angel",
-    "order": 3,
     "intro": "Golden Angel 062 combineert Blue Best Kittel, Gold Dust, Méchant Best Kittel en Angelina in één pedigree.",
     "why": "Deze duif past perfect binnen de opbouw van de Kittel-basis van RVH Pigeons en werd geselecteerd als investering in de toekomst.",
     "highlights": [
@@ -78,39 +79,34 @@
       "Méchant Best Kittel-lijn",
       "Angelina-invloed"
     ],
-    "photo": "assets/images/pigeons/golden-angel-062.jpg",
-    "eye": "assets/images/eyes/golden-angel-062-eye.jpg",
-    "pedigree": "assets/images/pedigrees/golden-angel-062-ped.pdf",
-    "video": "",
-    "dnaFile": ""
+    "order": 3
   },
   {
     "id": "blizzard-whizz",
     "name": "Blizzard Whizz",
     "ring": "GB24-X22223",
-    "sex": "Doffer",
+    "sex": "Duivin",
     "year": "2024",
     "origin": "Excelsior Stud",
     "category": "Elite Collection",
     "family": "Blizzard / Pierre Beyl",
-    "badge": "Inbred Blizzard King Kittel",
-    "dna": false,
+    "badge": "Excelsior Stud",
+    "photo": "assets/images/pigeons/blizzard-whizz.jpg",
+    "eye": "assets/images/eyes/blizzard-whizz.png",
+    "pedigree": "assets/images/pedigrees/blizzard-whizz.png",
+    "video": "",
+    "dnaFile": "",
     "father": "Billy Whizz",
     "mother": "Blizzard Duchess",
-    "order": 4,
-    "intro": "Blizzard Whizz is sterk ingeteeld op Blizzard King Kittel en daardoor bijzonder interessant als kweekduiver.",
-    "why": "Deze duiver versterkt de moderne Blizzard/Pierre Beyl-tak binnen RVH Pigeons met een geconcentreerde Van den Bulck- en Kittel-opbouw.",
+    "intro": "Blizzard Whizz is sterk ingeteeld op Blizzard King Kittel en daardoor bijzonder interessant voor de kweek.",
+    "why": "Deze duivin versterkt de moderne Blizzard/Pierre Beyl-tak binnen RVH Pigeons met een geconcentreerde Van den Bulck- en Kittel-opbouw.",
     "highlights": [
       "Blizzard King Kittel",
       "Brother Blizzard",
       "Blizzard 030",
       "Grizzle Kitmachine"
     ],
-    "photo": "assets/images/pigeons/blizzard-whizz.jpg",
-    "eye": "assets/images/eyes/blizzard-whizz-eye.png",
-    "pedigree": "assets/images/pedigrees/blizzard-whizz-ped.png",
-    "video": "",
-    "dnaFile": ""
+    "order": 4
   },
   {
     "id": "dancing-dream",
@@ -121,11 +117,14 @@
     "origin": "Excelsior Stud",
     "category": "Elite Collection",
     "family": "King Arthur / Van den Bulck",
-    "badge": "DNA Parent & Sex Certified",
-    "dna": true,
+    "badge": "Excelsior Stud",
+    "photo": "assets/images/pigeons/dancing-dream.png",
+    "eye": "assets/images/eyes/dancing-dream.png",
+    "pedigree": "assets/images/pedigrees/dancing-dream.jpg",
+    "video": "assets/videos/dancing-dream.mp4",
+    "dnaFile": "",
     "father": "King Arthur-lijn",
     "mother": "Northern Dancer-lijn",
-    "order": 5,
     "intro": "Dancing Dream is een rechtstreeks aangekochte kweekduivin uit Excelsior Stud.",
     "why": "Zij combineert King Arthur, Northern Dancer, Super Vale Dirk en Dirk Van den Bulck-bloed en vormt een waardevolle versterking voor de toekomstige kweekbasis.",
     "highlights": [
@@ -134,11 +133,7 @@
       "Northern Dancer",
       "DNA Parent & Sex Certified"
     ],
-    "photo": "assets/images/pigeons/dancing-dream.png",
-    "eye": "assets/images/eyes/dancing-dream-eye.png",
-    "pedigree": "assets/images/pedigrees/dancing-dream-ped.jpg",
-    "video": "assets/videos/dancing-dream-video.mp4",
-    "dnaFile": ""
+    "order": 5
   },
   {
     "id": "sabine-ricky-finn-155",
@@ -149,11 +144,14 @@
     "origin": "Tom Van Gaver",
     "category": "DNA Verified",
     "family": "Ricky / Sister Finn",
-    "badge": "DNA-gecertificeerd",
-    "dna": true,
+    "badge": "Tom Van Gaver",
+    "photo": "assets/images/pigeons/sabine-ricky-finn-155.jpg",
+    "eye": "assets/images/eyes/sabine-ricky-finn-155.jpg",
+    "pedigree": "assets/images/pedigrees/sabine-ricky-finn-155.jpg",
+    "video": "assets/videos/sabine-ricky-finn-155.mp4",
+    "dnaFile": "assets/dna/sabine-ricky-finn-155.pdf",
     "father": "BE20-4037384",
     "mother": "NL20-1525613",
-    "order": 6,
     "intro": "Sabine Ricky Finn 155 brengt moderne Tom Van Gaver-kwaliteit naar de RVH Pigeons-kweekbasis.",
     "why": "Deze DNA-gecontroleerde duivin werd geselecteerd omwille van haar afstamming, betrouwbaarheid en potentieel voor de verdere uitbouw van een allround kweekbasis.",
     "highlights": [
@@ -162,11 +160,7 @@
       "Ricky / Sister Finn invloed",
       "Interessant voor OLR- en allround kweek"
     ],
-    "photo": "assets/images/pigeons/sabine-ricky-finn-155.jpg",
-    "eye": "assets/images/eyes/sabine-ricky-finn-155-eye.jpg",
-    "pedigree": "assets/images/pedigrees/sabine-ricky-finn-155-ped.jpg",
-    "video": "assets/videos/sabine-ricky-finn-155-video.mp4",
-    "dnaFile": "assets/dna/sabine-ricky-finn-155-dna.pdf"
+    "order": 6
   },
   {
     "id": "de-verloren-zoon",
@@ -177,11 +171,14 @@
     "origin": "Gert De Swaef",
     "category": "Gert De Swaef",
     "family": "De Swaef / Best Kittel",
-    "badge": "Origineel Gert De Swaef",
-    "dna": false,
+    "badge": "Gert De Swaef",
+    "photo": "assets/images/pigeons/de-verloren-zoon.jpg",
+    "eye": "assets/images/eyes/de-verloren-zoon.jpg",
+    "pedigree": "assets/images/pedigrees/de-verloren-zoon.jpg",
+    "video": "assets/videos/de-verloren-zoon.mp4",
+    "dnaFile": "",
     "father": "Veile Stickers 069",
     "mother": "Best-Kittel Duivin",
-    "order": 7,
     "intro": "De Verloren Zoon is afkomstig van het topkweekhok van Gert De Swaef en verenigt Stickers-Donckers met Best Kittel-invloed.",
     "why": "Hij werd geselecteerd om de RVH-kweekbasis te versterken met bewezen De Swaef-kwaliteit en een sterke prestatieve onderbouw.",
     "highlights": [
@@ -190,11 +187,7 @@
       "Slechts beperkt gespeeld",
       "Stickers-Donckers / Best Kittel invloed"
     ],
-    "photo": "assets/images/pigeons/de-verloren-zoon.jpg",
-    "eye": "assets/images/eyes/de-verloren-zoon-eye.jpg",
-    "pedigree": "assets/images/pedigrees/de-verloren-zoon-ped.jpg",
-    "video": "assets/videos/de-verloren-zoon-video.mp4",
-    "dnaFile": ""
+    "order": 7
   },
   {
     "id": "beauty-stevanaba",
@@ -205,11 +198,14 @@
     "origin": "Gert De Swaef",
     "category": "DNA Verified",
     "family": "Steven / Olympic Anaba",
-    "badge": "DNA-gecertificeerd",
-    "dna": true,
+    "badge": "Gert De Swaef",
+    "photo": "assets/images/pigeons/beauty-stevanaba.jpg",
+    "eye": "assets/images/eyes/beauty-stevanaba.jpg",
+    "pedigree": "assets/images/pedigrees/beauty-stevanaba.jpg",
+    "video": "assets/videos/beauty-stevanaba.mp4",
+    "dnaFile": "assets/dna/beauty-stevanaba.pdf",
     "father": "GB19-V83242",
     "mother": "NL19-1340862",
-    "order": 8,
     "intro": "Beauty Stevanaba combineert Gert De Swaef-kwaliteit met sterke Steven- en Olympic Anaba-invloeden.",
     "why": "Zij werd toegevoegd als waardevolle schakel binnen de RVH-kweekbasis, met focus op bewezen nationale en internationale bloedlijnen.",
     "highlights": [
@@ -218,39 +214,34 @@
       "Olympic Anaba-lijn",
       "Gert De Swaef kwaliteit"
     ],
-    "photo": "assets/images/pigeons/beauty-stevanaba.jpg",
-    "eye": "assets/images/eyes/beauty-stevanaba-eye.jpg",
-    "pedigree": "assets/images/pedigrees/beauty-stevanaba-ped.jpg",
-    "video": "assets/videos/beauty-stevanaba-video.mp4",
-    "dnaFile": "assets/dna/beauty-stevanaba-dna.pdf"
+    "order": 8
   },
   {
     "id": "leideman-878",
-    "name": "Leideman 878",
+    "name": "Aodo",
     "ring": "NL21-1509878",
-    "sex": "Duif",
+    "sex": "Duivin",
     "year": "2021",
     "origin": "Gebr. Leideman",
     "category": "Leideman / Eijerkamp",
     "family": "Leideman",
-    "badge": "Original Gebr. Leideman",
-    "dna": false,
+    "badge": "Gebr. Leideman",
+    "photo": "assets/images/pigeons/leideman-878.png",
+    "eye": "assets/images/eyes/leideman-878.png",
+    "pedigree": "assets/images/pedigrees/leideman-878.jpg",
+    "video": "assets/videos/leideman-878.mp4",
+    "dnaFile": "",
     "father": "Fabio-lijn",
     "mother": "Arturo / Goed Grijs",
-    "order": 9,
-    "intro": "Een rechtstreekse Leideman-duif die de sterke Nederlandse prestatielijnen naar RVH Pigeons brengt.",
-    "why": "Deze duif werd geselecteerd voor de combinatie van Fabio, Arturo, Tila en Goed Grijs, families die hun waarde op meerdere afstanden bewezen hebben.",
+    "intro": "Aodo is een rechtstreekse Leideman-duivin die de sterke Nederlandse prestatielijnen naar RVH Pigeons brengt.",
+    "why": "Deze duivin werd geselecteerd voor de combinatie van Fabio, Arturo, Tila en Goed Grijs, families die hun waarde op meerdere afstanden bewezen hebben.",
     "highlights": [
       "Original Gebr. Leideman",
       "Fabio-lijn",
       "Arturo / Goed Grijs",
       "Moderne Nederlandse prestatielijn"
     ],
-    "photo": "assets/images/pigeons/leideman-878.png",
-    "eye": "assets/images/eyes/leideman-878-eye.png",
-    "pedigree": "assets/images/pedigrees/leideman-878-ped.jpg",
-    "video": "assets/videos/leideman-878-video.mp4",
-    "dnaFile": ""
+    "order": 9
   },
   {
     "id": "fenech",
@@ -261,12 +252,15 @@
     "origin": "Mr. R. Fenech & Son",
     "category": "Blizzard / Van den Bulck",
     "family": "Blizzard / Kittel",
-    "badge": "Original Upland Lofts",
-    "dna": false,
+    "badge": "Mr. R. Fenech & Son",
+    "photo": "assets/images/pigeons/fenech.jpg",
+    "eye": "assets/images/eyes/fenech.png",
+    "pedigree": "assets/images/pedigrees/fenech.png",
+    "video": "assets/videos/fenech.mp4",
+    "dnaFile": "",
     "father": "Phantom 001",
     "mother": "Sweet Blizzard",
-    "order": 10,
-    "intro": "Een rechtstreekse doffer uit de hokken van Mr. R. Fenech & Son, opgebouwd rond de Blizzard- en Kittel-familie.",
+    "intro": "Fenech is een rechtstreekse doffer uit de hokken van Mr. R. Fenech & Son, opgebouwd rond de Blizzard- en Kittel-familie.",
     "why": "Hij versterkt de RVH-kweekbasis met Phantom Blizzard, Blizzard King Kittel en Dirk Van den Bulck-invloeden.",
     "highlights": [
       "Blizzard King Kittel",
@@ -274,11 +268,7 @@
       "Dirk Van den Bulck",
       "Correct als doffer opgenomen"
     ],
-    "photo": "assets/images/pigeons/fenech.jpg",
-    "eye": "assets/images/eyes/fenech-eye.png",
-    "pedigree": "assets/images/pedigrees/fenech-ped.png",
-    "video": "assets/videos/fenech-video.mp4",
-    "dnaFile": ""
+    "order": 10
   },
   {
     "id": "baloe",
@@ -289,11 +279,14 @@
     "origin": "Eddy Den Haese – Molenzicht",
     "category": "Leideman / Eijerkamp",
     "family": "Leideman / Eijerkamp",
-    "badge": "Nieuwe aankoop 2025",
-    "dna": false,
+    "badge": "Eddy Den Haese",
+    "photo": "assets/images/pigeons/baloe.webp",
+    "eye": "",
+    "pedigree": "assets/images/pedigrees/baloe.webp",
+    "video": "",
+    "dnaFile": "",
     "father": "Griezel",
     "mother": "Aurelie",
-    "order": 11,
     "intro": "Baloe is een jonge kweekduiver afkomstig van Eddy Den Haese en opgebouwd rond moderne Leideman- en Eijerkamp-lijnen.",
     "why": "Hij werd geselecteerd om de kweekbasis te versterken met Goed Grijs, Ace 820, Viton, Indy en Triggerfinger-invloeden.",
     "highlights": [
@@ -302,11 +295,7 @@
       "Ace 820",
       "Viton / Triggerfinger"
     ],
-    "photo": "assets/images/pigeons/baloe.webp",
-    "eye": "",
-    "pedigree": "assets/images/pedigrees/baloe-ped.webp",
-    "video": "",
-    "dnaFile": ""
+    "order": 11
   },
   {
     "id": "int-blizzard-king",
@@ -317,11 +306,14 @@
     "origin": "Hendrik Wilpers",
     "category": "Blizzard / Van den Bulck",
     "family": "Blizzard King Kittel",
-    "badge": "Inbred Blizzard King Kittel",
-    "dna": false,
+    "badge": "Hendrik Wilpers",
+    "photo": "assets/images/pigeons/int-blizzard-king.webp",
+    "eye": "assets/images/eyes/int-blizzard-king.webp",
+    "pedigree": "assets/images/pedigrees/int-blizzard-king.pdf",
+    "video": "",
+    "dnaFile": "",
     "father": "Direct Blizzard 025",
     "mother": "Direct Blizzard 048",
-    "order": 12,
     "intro": "Int. Blizzard King is een jonge kweekduiver van Hendrik Wilpers, opgebouwd rond de wereldberoemde Blizzard King Kittel-familie.",
     "why": "Deze duiver brengt een sterke concentratie van Blizzard King Kittel, Blizzard 030 en Grizzle Kitmachine naar RVH Pigeons.",
     "highlights": [
@@ -330,10 +322,6 @@
       "Grizzle Kitmachine",
       "Pierre Beyl / Van den Bulck"
     ],
-    "photo": "assets/images/pigeons/int-blizzard-king.webp",
-    "eye": "assets/images/eyes/int-blizzard-king-eye.webp",
-    "pedigree": "assets/images/pedigrees/int-blizzard-king-ped.pdf",
-    "video": "",
-    "dnaFile": ""
+    "order": 12
   }
 ]

@@ -1,3 +1,9 @@
-# RVH Pigeons Official v2.1 Static
+# RVH Pigeons v3.2
 
-Kweekbasis, Home, Elite en DNA zijn nu statisch. Werkt lokaal én online.
+Volledig opnieuw opgebouwd met:
+- alle profielpagina's opnieuw aangemaakt
+- alle knoppen linken naar bestaande bestanden
+- The One & Only: the-one-and-only.html
+- geen oude one-and-only.html link meer
+- foto's/oogfoto's/stambomen gecorrigeerd
+- LINKCHECK.txt toegevoegd
