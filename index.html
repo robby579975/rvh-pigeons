@@ -143,6 +143,14 @@
     transform: translateY(-4px);
   }
 </style>
+<style>
+.rvh-photo-section { padding: 32px 0 12px; }
+.rvh-photo-wide { display:block; width:100%; height:auto; border-radius:16px; border:1px solid rgba(201,162,79,.28); }
+.rvh-about-layout { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(260px,.8fr); gap:28px; align-items:start; }
+.rvh-about-portrait { margin:0; }
+.rvh-about-portrait img { display:block; width:100%; height:auto; border-radius:14px; border:1px solid rgba(201,162,79,.28); }
+@media(max-width:760px) { .rvh-photo-section { padding:20px 0 0; } .rvh-about-layout { grid-template-columns:1fr; } .rvh-about-portrait { max-width:500px; margin:0 auto; } }
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -163,6 +171,11 @@
 <div><strong>OLR</strong>Toekomstige ambitie</div>
 <div><strong>RVH</strong>Ressegem, België</div>
 </div>
+</div>
+</section>
+<section class="rvh-photo-section" aria-label="RVH Pigeons kweekstation">
+<div class="container">
+<img class="rvh-photo-wide" src="assets/images/site/robby-duivenhok.webp" alt="Robby Van Herreweghe met een duif voor het duivenhok van RVH Pigeons" width="1648" height="928" fetchpriority="high"/>
 </div>
 </section>
 <section class="section">
