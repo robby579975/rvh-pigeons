@@ -7,6 +7,26 @@
 <title>Referenties | RVH Pigeons</title>
 <link href="css/style.css" rel="stylesheet"/>
 <script defer="" src="js/app.js"></script>
+<style>
+.ref-intro{max-width:780px;color:var(--muted);margin:0 0 34px}.ref-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:40px}.ref-stats>div{background:#141414;border:1px solid var(--line);border-radius:18px;padding:22px}.ref-stats strong{display:block;font:38px Georgia,serif;color:var(--gold2)}.ref-stats span{color:var(--muted);font-size:13px}.ref-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}.ref-card{background:linear-gradient(155deg,#1a1a1a,#0b0b0b);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 18px 50px #0008}.ref-image{height:275px;overflow:hidden;background:#101010}.ref-image img{width:100%;height:100%;object-fit:contain;background:#1b1b1b}.ref-placeholder{height:175px;display:grid;place-content:center;text-align:center;background:radial-gradient(circle,#252017,#111);color:#c9a24f;font:48px Georgia,serif}.ref-placeholder small{display:block;font:12px Arial,sans-serif;letter-spacing:3px;margin-top:8px}.ref-content{padding:26px}.ref-ring{color:var(--gold);letter-spacing:1.4px;font-size:12px;font-weight:800}.ref-content h3{font:29px Georgia,serif;margin:8px 0}.ref-owner{color:var(--muted);margin:0 0 17px}.ref-highlight{background:#231e13;color:var(--gold2);border:1px solid var(--line);padding:13px 16px;border-radius:12px;font-weight:700;font-size:14px;margin:0 0 20px}.ref-parents{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}.ref-parents>div{border:1px solid #333;border-radius:12px;padding:12px;min-width:0}.ref-parents small{display:block;color:#9e9e9e;font-size:11px;text-transform:uppercase;letter-spacing:1px}.ref-parents strong{font-size:13px;overflow-wrap:anywhere}.ref-actions{display:flex;gap:10px;flex-wrap:wrap}.ref-action{appearance:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:var(--gold);color:#0a0a0a;font-size:13px;font-weight:800;padding:12px 17px;border-radius:99px}.ref-action.secondary{background:transparent;color:var(--gold)}.ref-action:disabled{opacity:.45;cursor:not-allowed}.ref-results{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}.ref-results[hidden]{display:none}.ref-results table{width:100%;border-collapse:collapse;font-size:12px}.ref-results th{text-align:left;color:var(--gold);font-size:11px}.ref-results th,.ref-results td{padding:9px 6px;border-bottom:1px solid #333;vertical-align:top}.ref-results td:nth-child(2){font-weight:800;color:var(--gold2)}.ref-results td:last-child{color:#bcb6aa}.ref-note{font-size:12px;color:var(--muted);margin-top:18px}.ped-modal{border:1px solid var(--line);border-radius:18px;background:#101010;color:#fff;padding:18px;max-width:min(95vw,1050px);max-height:94vh}.ped-modal::backdrop{background:#000d}.ped-modal img{max-height:80vh;max-width:100%;object-fit:contain;margin:auto}.ped-modal-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:12px}.ped-modal button{border:1px solid var(--gold);background:none;color:var(--gold);border-radius:99px;padding:9px 16px;cursor:pointer}@media(max-width:800px){.ref-grid{grid-template-columns:1fr}.ref-stats{grid-template-columns:1fr 1fr 1fr}.ref-stats strong{font-size:28px}}@media(max-width:520px){.ref-stats{grid-template-columns:1fr}.ref-image{height:230px}.ref-content{padding:20px}.ref-content h3{font-size:24px}.ref-parents{grid-template-columns:1fr}.ref-results{overflow-x:auto}}
+
+/* Compacte foto-opmaak zonder lege zijvlakken */
+.ref-image{height:310px;background:#111}.ref-image img{object-fit:cover;object-position:center 45%;display:block}.ref-card{display:flex;flex-direction:column}.ref-content{flex:1}.ref-content h3{margin:0 0 5px;font-size:27px}.ref-ring{font-size:14px;letter-spacing:1.1px;margin-bottom:9px}.ref-owner{margin-bottom:17px}.ref-parents a{color:var(--gold2);text-decoration:underline;text-underline-offset:3px}.ref-parents a:hover{color:#fff}
+@media(min-width:1100px){.ref-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ref-image{height:310px}}
+@media(max-width:520px){.ref-image{height:245px}.ref-content h3{font-size:25px}}
+
+/* Klikbare duivenfoto's en volledige weergave */
+.ref-image .ref-photo-open{display:block;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:zoom-in;position:relative;overflow:hidden}
+.ref-image .ref-photo-open img{width:100%;height:100%;object-fit:cover;transition:transform .2s ease}
+.ref-image .ref-photo-open:hover img{transform:scale(1.025)}
+.ref-image .ref-photo-open:focus-visible{outline:3px solid #c6a45c;outline-offset:-4px}
+.ref-photo-hint{position:absolute;right:12px;bottom:12px;padding:7px 10px;border-radius:30px;background:rgba(0,0,0,.76);color:#fff;font:12px Arial,sans-serif;pointer-events:none}
+.ref-photo-modal{border:0;padding:0;max-width:min(96vw,1200px);max-height:95vh;background:#0b0b0b;color:white;box-shadow:0 18px 75px #000;border-radius:12px;overflow:hidden}
+.ref-photo-modal::backdrop{background:rgba(0,0,0,.9)}
+.ref-photo-modal-head{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:10px 16px;font-family:Arial,sans-serif}
+.ref-photo-modal-head button{background:#242424;color:#fff;border:1px solid #555;border-radius:8px;padding:9px 14px;cursor:pointer}
+.ref-photo-modal img{display:block;max-width:96vw;max-height:calc(95vh - 55px);width:auto;height:auto;object-fit:contain;margin:auto}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -14,7 +34,15 @@
 <a class="brand" href="index.html">
 <img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/>
 </a>
-<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="contact.html">Contact</a></nav>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">Over RVH</a>
+<a href="elite.html">Elite Collection</a>
+<a href="collection.html">Kweekbasis</a>
+<a href="bloodlines.html">Bloedlijnen</a>
+<a href="references.html">Referenties</a>
+<a href="contact.html">Contact</a>
+</nav>
 <button class="menu" data-menu="">Menu</button>
 </div>
 </header>
@@ -28,205 +56,21 @@
     </p>
 </div>
 </section>
-<section class="section">
-<div class="container split">
-<div class="panel">
-<p class="eyebrow">Onze ambitie</p>
-<h2>Prestaties creëren vertrouwen.</h2>
-<p>
-        Deze pagina wordt opgebouwd als verzamelplaats voor resultaten, referenties en
-        prestaties van liefhebbers die met duiven of nakomelingen uit de RVH Pigeons-lijnen spelen.
-      </p>
-<p>
-        In de startfase tonen we hieronder enkele voorbeeldblokken. Later kunnen deze eenvoudig
-        vervangen worden door echte resultaten, foto’s, namen en wedstrijden.
-      </p>
-<div class="bullets">
-<div>Resultaten van liefhebbers met RVH-duiven.</div>
-<div>Foto’s van winnaars, duiven en hokken.</div>
-<div>Overzicht van nationale, provinciale en OLR-prestaties.</div>
-</div>
-</div>
-<article class="card">
-<img alt="Voorbeeld referentie" src="assets/hero/hero.svg"/>
-<div class="pad">
-<span class="badge">Voorbeeld</span>
-<h3>Referentiefoto</h3>
-<p>Deze voorlopige afbeelding kun je later vervangen door een foto van een winnende duif, liefhebber of trofee.</p>
-</div>
-</article>
-</div>
-</section>
-<section class="section alt">
-<div class="container">
-<div class="title">
-<h2>Voorbeeldresultaten</h2>
-<p>Gebruik deze opbouw later voor echte prestaties van liefhebbers die met RVH Pigeons-duiven spelen.</p>
-</div>
-<div class="grid">
-<article class="card">
-<img alt="Voorbeeld resultaat" src="assets/hero/kittel.svg"/>
-<div class="pad">
-<span class="badge">Voorbeeldresultaat</span>
-<h3>1e Provinciaal</h3>
-<p><strong>Liefhebber:</strong> Naam liefhebber</p>
-<p><strong>Plaats:</strong> België</p>
-<p><strong>Duif:</strong> Nakomeling RVH Pigeons</p>
-<div class="bullets">
-<div>1e Provinciaal tegen 2.431 duiven</div>
-<div>3e Nationaal Zone tegen 8.920 duiven</div>
-<div>Afstamming: Kittel / Van den Bulck</div>
-</div>
-</div>
-</article>
-<article class="card">
-<img alt="Voorbeeld OLR resultaat" src="assets/hero/blizzard.svg"/>
-<div class="pad">
-<span class="badge">OLR voorbeeld</span>
-<h3>Top 10 Finale OLR</h3>
-<p><strong>Liefhebber:</strong> Naam liefhebber</p>
-<p><strong>Wedstrijd:</strong> One Loft Race</p>
-<p><strong>Duif:</strong> RVH-lijn</p>
-<div class="bullets">
-<div>7e Finale OLR</div>
-<div>2e Ace Pigeon ranking</div>
-<div>Afstamming: Blizzard / Pierre Beyl</div>
-</div>
-</div>
-</article>
-<article class="card">
-<img alt="Voorbeeld asduif" src="assets/hero/leideman.svg"/>
-<div class="pad">
-<span class="badge">Asduif voorbeeld</span>
-<h3>1e Asduif Club</h3>
-<p><strong>Liefhebber:</strong> Naam liefhebber</p>
-<p><strong>Seizoen:</strong> 2026</p>
-<p><strong>Lijn:</strong> Leideman / Eijerkamp</p>
-<div class="bullets">
-<div>1e Asduif snelheid</div>
-<div>Meerdere prijzen per tiental</div>
-<div>Afstamming: Goed Grijs / Ace 820</div>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section">
-<div class="container">
-<div class="title">
-<h2>Referenties per liefhebber</h2>
-<p>Hier kun je later per liefhebber een volledig blok maken met foto, naam, locatie en prestaties.</p>
-</div>
-<div class="grid">
-<article class="card">
-<img alt="Voorbeeld liefhebber" src="assets/hero/deswaef.svg"/>
-<div class="pad">
-<span class="badge">België</span>
-<h3>Naam liefhebber</h3>
-<p><strong>Locatie:</strong> Provincie / gemeente</p>
-<p>
-            Korte tekst over de liefhebber, de duif uit RVH Pigeons en waarom dit resultaat belangrijk is.
-          </p>
-<div class="bullets">
-<div>1e prijs tegen ... duiven</div>
-<div>2e prijs tegen ... duiven</div>
-<div>Topresultaat met RVH-bloedlijn</div>
-</div>
-</div>
-</article>
-<article class="card">
-<img alt="Voorbeeld liefhebber" src="assets/hero/vangaver.svg"/>
-<div class="pad">
-<span class="badge">Nederland</span>
-<h3>Naam liefhebber</h3>
-<p><strong>Locatie:</strong> Provincie / gemeente</p>
-<p>
-            Hier komt later een echte referentie met foto’s van de duif, het resultaat en eventueel een korte quote.
-          </p>
-<div class="bullets">
-<div>Top 10 NPO / Nationaal</div>
-<div>Asduif ranking</div>
-<div>Afstamming vermeld</div>
-</div>
-</div>
-</article>
-<article class="card">
-<img alt="Voorbeeld referentie buitenland" src="assets/hero/hero.svg"/>
-<div class="pad">
-<span class="badge">Internationaal</span>
-<h3>Toekomstige referentie</h3>
-<p><strong>Locatie:</strong> Land / OLR</p>
-<p>
-            Deze kaart kan later gebruikt worden voor internationale prestaties of One Loft Race-resultaten.
-          </p>
-<div class="bullets">
-<div>OLR finale resultaat</div>
-<div>Ace pigeon ranking</div>
-<div>Internationale referentie</div>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section alt">
-<div class="container split">
-<div class="panel">
-<p class="eyebrow">Hall of Fame</p>
-<h2>Toekomstige successen</h2>
-<p>
-        Naarmate RVH Pigeons groeit, wordt deze pagina aangevuld met echte resultaten,
-        winnaarsfoto’s, reportages en referenties van liefhebbers.
-      </p>
-<div class="bullets">
-<div>Provinciale en nationale resultaten.</div>
-<div>One Loft Race-prestaties.</div>
-<div>Referenties van tevreden liefhebbers.</div>
-</div>
-</div>
-<div class="panel">
-<p class="eyebrow">Heb jij gespeeld met RVH-bloed?</p>
-<h2>Stuur je resultaat door.</h2>
-<p>
-        Heb je een mooi resultaat behaald met een duif uit de RVH Pigeons-bloedlijnen?
-        Dan mag je altijd contact opnemen met foto’s en wedstrijdinformatie.
-      </p>
-<a class="btn" href="contact.html">Resultaat doorgeven</a>
-</div>
-</div>
-</section>
-
-<footer class="sitefooter minimal-footer">
-<div class="container minimal-footer-grid">
-<div class="minimal-footer-brand">
-<div class="gold-line"></div>
+<section class="section"><div class="container"><p class="eyebrow">Bewezen prestaties · Sterke bloedlijnen</p><h2 style="font:clamp(34px,5vw,58px) Georgia,serif;margin:0 0 15px">Succes bij andere liefhebbers</h2><p class="ref-intro">Een selectie van referentieduiven uit onze kweekbasis. Ontdek hun wedstrijdresultaten, ouders en originele stambomen.</p><div class="ref-grid"><article class="ref-card"><div class="ref-image"><button aria-label="Bekijk volledige foto van Duif BE25-4134841" class="ref-photo-open" data-full-photo="assets/references/841.jpg" data-photo-title="Duif BE25-4134841" type="button"><img alt="Duif BE25-4134841" loading="lazy" src="assets/references/841.jpg"/><span class="ref-photo-hint">⤢ Bekijk volledige foto</span></button></div><div class="ref-content"><h3>Duif 841</h3><div class="ref-ring">BE25-4134841</div><p class="ref-owner">Gespeeld door Gregory Tallieu</p><div class="ref-highlight">★ 4× 1e club · 3e provinciaal / 8.762</div><div class="ref-parents"><div><small>Vader</small><strong>Dark 307 · BE20-4014307</strong></div><div><small>Moeder</small><strong>Vale Greg · BE24-4175806</strong></div></div><div class="ref-actions"><button aria-controls="results-0" aria-expanded="false" class="ref-action" data-results="results-0" type="button">Alle resultaten ↓</button><button class="ref-action secondary" disabled="" title="Pedigree volgt">Pedigree volgt</button></div><div class="ref-results" hidden="" id="results-0"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Orléans 2025</td><td>1 / 140</td><td>3 / 8.762</td></tr><tr><td>Châteaudun 2025</td><td>1 / 40</td><td>23 / 3.413</td></tr><tr><td>Orléans 2026</td><td>6 / 1.023</td><td>26 / 13.106</td></tr><tr><td>Valpuiseaux 2026</td><td>1 / 445</td><td>43 / 6.854</td></tr><tr><td>Orléans 2025</td><td>1 / 71</td><td>91 / 5.908</td></tr><tr><td>Noyon 2026</td><td>14 / 294</td><td>—</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-image"><button aria-label="Bekijk volledige foto van Duif BE26-4034125" class="ref-photo-open" data-full-photo="assets/references/125.jpg" data-photo-title="Duif BE26-4034125" type="button"><img alt="Duif BE26-4034125" loading="lazy" src="assets/references/125.jpg"/><span class="ref-photo-hint">⤢ Bekijk volledige foto</span></button></div><div class="ref-content"><h3>Duif 125</h3><div class="ref-ring">BE26-4034125</div><p class="ref-owner">Gespeeld door Gregory Tallieu</p><div class="ref-highlight">★ 2× 1e club · 7e ANONS ±26.000</div><div class="ref-parents"><div><small>Vader</small><strong><a href="baloe.html">Baloe · BE25-4034025</a></strong></div><div><small>Moeder</small><strong><a href="the-one-and-only.html">The One &amp; Only · GB24-D85660</a></strong></div></div><div class="ref-actions"><button aria-controls="results-1" aria-expanded="false" class="ref-action" data-results="results-1" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_26-4034125_4gen.jpg" data-ring="BE26-4034125" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-1"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Noyon · 151 km</td><td>1 / 250</td><td>4 / 4.715</td></tr><tr><td>Noyon · 151 km</td><td>1 / 97</td><td>17 / 3.320</td></tr><tr><td>Pont · 189 km</td><td>2 / 688</td><td>74 / 4.925</td></tr><tr><td>Noyon · 151 km</td><td>3 / 147</td><td>123 / 6.190</td></tr><tr><td>Noyon · 151 km</td><td>5 / 64</td><td>125 / 2.399</td></tr><tr><td>Clermont · 187 km</td><td>18 / 306</td><td>35 / 1.308</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-image"><button aria-label="Bekijk volledige foto van Duif BE26-4034146" class="ref-photo-open" data-full-photo="assets/references/146.jpg" data-photo-title="Duif BE26-4034146" type="button"><img alt="Duif BE26-4034146" loading="lazy" src="assets/references/146.jpg"/><span class="ref-photo-hint">⤢ Bekijk volledige foto</span></button></div><div class="ref-content"><h3>Duif 146</h3><div class="ref-ring">BE26-4034146</div><p class="ref-owner">Gespeeld door Leny Van Der Linden</p><div class="ref-highlight">★ 1e / 1.087 Pont · 3e semi-prov. / 4.756</div><div class="ref-parents"><div><small>Vader</small><strong>Last Crack · BE20-4221319</strong></div><div><small>Moeder</small><strong>Best Mama · NL23-9553089</strong></div></div><div class="ref-actions"><button aria-controls="results-2" aria-expanded="false" class="ref-action" data-results="results-2" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_26-4034146_4gen.jpg" data-ring="BE26-4034146" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-2"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Pont · 186 km</td><td>1 / 1.087</td><td>11 / 1.958 · 12 / 4.349</td></tr><tr><td>Valpuiseaux · 286 km</td><td>5 / 659</td><td>7 / 1.206 · 7 / 2.217 · 3 / 4.756 semi-prov. · 7 / 5.029 interprov.</td></tr><tr><td>Orléans · 341 km</td><td>18 / 567</td><td>69 / 1.202 · 156 / 2.362</td></tr><tr><td>Noyon · 146 km</td><td>19 / 715</td><td>31 / 681</td></tr><tr><td>Valpuiseaux · 286 km</td><td>34 / 459</td><td>—</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-image"><button aria-label="Bekijk volledige foto van Duif BE26-4034167" class="ref-photo-open" data-full-photo="assets/references/167.jpg" data-photo-title="Duif BE26-4034167" type="button"><img alt="Duif BE26-4034167" loading="lazy" src="assets/references/167.jpg"/><span class="ref-photo-hint">⤢ Bekijk volledige foto</span></button></div><div class="ref-content"><h3>Duif 167</h3><div class="ref-ring">BE26-4034167</div><p class="ref-owner">Gespeeld door Gregory Tallieu</p><div class="ref-highlight">★ 19e / 184 Orléans · 872e / 10.180 interprov.</div><div class="ref-parents"><div><small>Vader</small><strong><a href="baloe.html">Baloe · BE25-4034025</a></strong></div><div><small>Moeder</small><strong><a href="the-one-and-only.html">The One &amp; Only · GB24-D85660</a></strong></div></div><div class="ref-actions"><button aria-controls="results-3" aria-expanded="false" class="ref-action" data-results="results-3" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_26-4034167_4gen.jpg" data-ring="BE26-4034167" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-3"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Pont · 189 km</td><td>7 / 688</td><td>149 / 4.925</td></tr><tr><td>Noyon · 151 km</td><td>8 / 97</td><td>204 / 3.320</td></tr><tr><td>Orléans · 344 km</td><td>19 / 184</td><td>872 / 10.180 interprov.</td></tr><tr><td>Noyon · 151 km</td><td>29 / 772</td><td>153 / 7.458</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-placeholder">RVH<small>BREEDING EXCELLENCE</small></div><div class="ref-content"><h3>Duif 059</h3><div class="ref-ring">BE25-4048059</div><p class="ref-owner">Liefhebber nog te bevestigen</p><div class="ref-highlight">★ 2× 1e prijs</div><div class="ref-parents"><div><small>Vader</small><strong><a href="de-verloren-zoon.html">De Verloren Zoon · BE23-4093157</a></strong></div><div><small>Moeder</small><strong>BE23-6192667 · Van Heirstraeten F&amp;T</strong></div></div><div class="ref-actions"><button aria-controls="results-4" aria-expanded="false" class="ref-action" data-results="results-4" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_25-4048059_4gen.jpg" data-ring="BE25-4048059" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-4"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Wedstrijd 2026</td><td>1 / 152</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>1 / 58</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>2 / 234</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>2 / 119</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>3 / 81</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>3 / 49</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>4 / 41</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>6 / 90</td><td>—</td></tr><tr><td>Wedstrijd 2026</td><td>6 / 73</td><td>—</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-placeholder">RVH<small>BREEDING EXCELLENCE</small></div><div class="ref-content"><h3>Duif 060</h3><div class="ref-ring">BE25-4048060</div><p class="ref-owner">Liefhebber nog te bevestigen</p><div class="ref-highlight">★ 7e / 891 duiven</div><div class="ref-parents"><div><small>Vader</small><strong><a href="de-verloren-zoon.html">De Verloren Zoon · BE23-4093157</a></strong></div><div><small>Moeder</small><strong>BE23-6192667 · Van Heirstraeten F&amp;T</strong></div></div><div class="ref-actions"><button aria-controls="results-5" aria-expanded="false" class="ref-action" data-results="results-5" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_25-4048060_4gen.jpg" data-ring="BE25-4048060" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-5"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Wedstrijd</td><td>7 / 891</td><td>—</td></tr><tr><td>Wedstrijd</td><td>11 / 612</td><td>—</td></tr><tr><td>Wedstrijd</td><td>20 / 819</td><td>—</td></tr><tr><td>Wedstrijd</td><td>23 / 243</td><td>—</td></tr><tr><td>Wedstrijd</td><td>62 / 1.182</td><td>—</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-placeholder">RVH<small>BREEDING EXCELLENCE</small></div><div class="ref-content"><h3>Duif 148</h3><div class="ref-ring">BE26-4034148</div><p class="ref-owner">Liefhebber nog te bevestigen</p><div class="ref-highlight">★ 3e / 154 Quievrain</div><div class="ref-parents"><div><small>Vader</small><strong>BE24-4046695</strong></div><div><small>Moeder</small><strong>Daughter Bongo · BE21-4090949</strong></div></div><div class="ref-actions"><button aria-controls="results-6" aria-expanded="false" class="ref-action" data-results="results-6" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_26-4034148_4gen.jpg" data-ring="BE26-4034148" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-6"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Quievrain · 53 km</td><td>3 / 154</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>4 / 209</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>6 / 432</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>13 / 283</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>14 / 147</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>15 / 212</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>19 / 297</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>30 / 290</td><td>—</td></tr></tbody></table></div></div></article><article class="ref-card"><div class="ref-placeholder">RVH<small>BREEDING EXCELLENCE</small></div><div class="ref-content"><h3>Duif 157</h3><div class="ref-ring">BE26-4034157</div><p class="ref-owner">Gespeeld door Paul Van Herreweghe</p><div class="ref-highlight">★ 2× 1e prijs Quievrain</div><div class="ref-parents"><div><small>Vader</small><strong>BE21-4090908</strong></div><div><small>Moeder</small><strong>Deurbel · BE24-4046696</strong></div></div><div class="ref-actions"><button aria-controls="results-7" aria-expanded="false" class="ref-action" data-results="results-7" type="button">Alle resultaten ↓</button><button class="ref-action secondary" data-ped="assets/references/Compustam_26-4034157_4gen.jpg" data-ring="BE26-4034157" type="button">Bekijk pedigree ↗</button></div><div class="ref-results" hidden="" id="results-7"><table><thead><tr><th>Wedstrijd</th><th>Club</th><th>Overig / provinciaal</th></tr></thead><tbody><tr><td>Quievrain · 53 km</td><td>1 / 211</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>1 / 103</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>17 / 154</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>26 / 147</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>31 / 210</td><td>—</td></tr><tr><td>Quievrain · 53 km</td><td>36 / 212</td><td>—</td></tr></tbody></table></div></div></article></div></div></section><dialog class="ped-modal" id="ped-dialog"><div class="ped-modal-head"><strong id="ped-title">Pedigree</strong><button id="ped-close" type="button">Sluiten ✕</button></div><img alt="Originele stamboom" id="ped-img"/></dialog><script>(function(){document.querySelectorAll('[data-results]').forEach(b=>b.addEventListener('click',()=>{const el=document.getElementById(b.dataset.results);el.hidden=!el.hidden;b.setAttribute('aria-expanded',String(!el.hidden));b.textContent=el.hidden?'Alle resultaten ↓':'Verberg resultaten ↑'}));const d=document.getElementById('ped-dialog');document.querySelectorAll('[data-ped]').forEach(b=>b.addEventListener('click',()=>{document.getElementById('ped-img').src=b.dataset.ped;document.getElementById('ped-title').textContent='Pedigree · '+b.dataset.ring;d.showModal()}));document.getElementById('ped-close').onclick=()=>d.close();d.addEventListener('click',e=>{if(e.target===d)d.close()})})();</script><footer class="sitefooter">
+<div class="container footgrid">
 <div>
-<h2>RVH Pigeons</h2>
-<p class="footer-slogan">Breeding Excellence</p>
-<p>Een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en internationale topbloedlijnen.</p>
-<p class="footer-location">Ressegem, België</p>
+<img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/>
+<p>RVH Pigeons · Breeding Excellence · Ressegem, België</p>
 </div>
-</div>
-<div class="minimal-footer-column">
+<div>
 <h3>Contact</h3>
-<a href="tel:+32479014062">0479 01 40 62</a>
-<a href="mailto:info@rvhpigeons.com">info@rvhpigeons.com</a>
-<a href="contact.html">Contactformulier</a>
+<p>0479 01 40 62<br/>info@rvhpigeons.com</p>
 </div>
-<div class="minimal-footer-column">
-<h3>Snel naar</h3>
-<a href="elite.html">Elite Collection</a>
-<a href="collection.html">Kweekbasis</a>
-<a href="bloodlines.html">Bloedlijnen</a>
-<a href="references.html">Referenties</a>
+<div>
+<h3>Referenties</h3>
+<p>Resultaten · Winnaars · OLR · Hall of Fame</p>
 </div>
-</div>
-<div class="container minimal-footer-bottom">
-<span>© 2025 RVH Pigeons</span>
-<span>Breeding Excellence</span>
 </div>
 </footer>
-
-</body>
+<dialog class="ref-photo-modal" id="ref-photo-dialog"><div class="ref-photo-modal-head"><strong id="ref-photo-title">Duivenfoto</strong><button id="ref-photo-close" type="button">Sluiten ✕</button></div><img alt="Volledige foto van de duif" id="ref-photo-full"/></dialog><script>(function(){const d=document.getElementById('ref-photo-dialog'),im=document.getElementById('ref-photo-full'),title=document.getElementById('ref-photo-title');document.querySelectorAll('[data-full-photo]').forEach(b=>b.addEventListener('click',()=>{im.src=b.dataset.fullPhoto;title.textContent=b.dataset.photoTitle;d.showModal()}));document.getElementById('ref-photo-close').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>im.removeAttribute('src'))})();</script></body>
 </html>
