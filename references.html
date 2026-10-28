@@ -53,6 +53,13 @@
   font-feature-settings: "lnum" 1, "tnum" 1;
   letter-spacing: .015em;
 }
+
+/* Fotovenster identiek aan het pedigreevenster */
+#ref-photo-dialog.ped-modal{border:1px solid var(--line);border-radius:18px;background:#101010;color:#fff;padding:18px;max-width:min(95vw,1050px);max-height:94vh;box-shadow:0 18px 75px #000;overflow:auto}
+#ref-photo-dialog.ped-modal::backdrop{background:#000d}
+#ref-photo-dialog .ped-modal-head{padding:0;margin-bottom:12px;font-family:inherit}
+#ref-photo-dialog .ped-modal-head button{border:1px solid var(--gold);background:none;color:var(--gold);border-radius:99px;padding:9px 16px;cursor:pointer}
+#ref-photo-dialog img{display:block;max-width:100%;max-height:80vh;width:auto;height:auto;object-fit:contain;margin:auto}
 </style>
 </head>
 <body>
@@ -99,5 +106,5 @@
 </div>
 </div>
 </footer>
-<dialog class="ref-photo-modal" id="ref-photo-dialog"><div class="ref-photo-modal-head"><strong id="ref-photo-title">Duivenfoto</strong><button id="ref-photo-close" type="button">Sluiten ✕</button></div><img alt="Volledige foto van de duif" id="ref-photo-full"/></dialog><script>(function(){const d=document.getElementById('ref-photo-dialog'),im=document.getElementById('ref-photo-full'),title=document.getElementById('ref-photo-title');document.querySelectorAll('[data-full-photo]').forEach(b=>b.addEventListener('click',()=>{im.src=b.dataset.fullPhoto;title.textContent=b.dataset.photoTitle;d.showModal()}));document.getElementById('ref-photo-close').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>im.removeAttribute('src'))})();</script></body>
+<dialog class="ped-modal ref-photo-modal-matched" id="ref-photo-dialog"><div class="ped-modal-head"><strong id="ref-photo-title">Foto</strong><button id="ref-photo-close" type="button">Sluiten ✕</button></div><img alt="Volledige foto van de duif" id="ref-photo-full"/></dialog><script>(function(){const d=document.getElementById('ref-photo-dialog'),im=document.getElementById('ref-photo-full'),title=document.getElementById('ref-photo-title');document.querySelectorAll('[data-full-photo]').forEach(b=>b.addEventListener('click',()=>{im.src=b.dataset.fullPhoto;title.textContent='Foto · '+b.dataset.photoTitle;d.showModal()}));document.getElementById('ref-photo-close').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>im.removeAttribute('src'))})();</script></body>
 </html>
