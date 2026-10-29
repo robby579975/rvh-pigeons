@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="nl">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Nieuws | RVH Pigeons</title>
-<link href="css/style.css" rel="stylesheet"/>
-<script defer="" src="js/app.js"></script>
-<style>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <title>Nieuws | RVH Pigeons</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <script defer="" src="js/app.js"></script>
+  <style>
     .home-family-six {
       grid-template-columns: repeat(6, 1fr);
     }
@@ -24,7 +25,7 @@
       }
     }
   </style>
-<style>
+  <style>
     .minimal-footer {
       background:
         radial-gradient(circle at 8% 0%, rgba(201, 162, 79, .10), transparent 26rem),
@@ -121,68 +122,266 @@
       }
     }
   </style>
-<style>
-  .family-band > .bloodline-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    height: 100%;
-  }
+  <style>
+    .family-band>.bloodline-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      height: 100%;
+    }
 
-  .family-band > .bloodline-link > div {
-    height: 100%;
-  }
+    .family-band>.bloodline-link>div {
+      height: 100%;
+    }
 
-  .family-band > .bloodline-link:hover {
-    text-decoration: none;
-  }
+    .family-band>.bloodline-link:hover {
+      text-decoration: none;
+    }
 
-  .family-band > .bloodline-link:hover > div {
-    border-color: rgba(201,162,79,.58);
-    transform: translateY(-4px);
-  }
-</style>
-<style>
-.rvh-photo-section { padding: 32px 0 12px; }
-.rvh-photo-wide { display:block; width:100%; height:auto; border-radius:16px; border:1px solid rgba(201,162,79,.28); }
-.rvh-about-layout { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(260px,.8fr); gap:28px; align-items:start; }
-.rvh-about-portrait { margin:0; }
-.rvh-about-portrait img { display:block; width:100%; height:auto; border-radius:14px; border:1px solid rgba(201,162,79,.28); }
-@media(max-width:760px) { .rvh-photo-section { padding:20px 0 0; } .rvh-about-layout { grid-template-columns:1fr; } .rvh-about-portrait { max-width:500px; margin:0 auto; } }
-</style>
+    .family-band>.bloodline-link:hover>div {
+      border-color: rgba(201, 162, 79, .58);
+      transform: translateY(-4px);
+    }
+  </style>
+  <style>
+    .rvh-photo-section {
+      padding: 32px 0 12px;
+    }
+
+    .rvh-photo-wide {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      border: 1px solid rgba(201, 162, 79, .28);
+    }
+
+    .rvh-about-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(260px, .8fr);
+      gap: 28px;
+      align-items: start;
+    }
+
+    .rvh-about-portrait {
+      margin: 0;
+    }
+
+    .rvh-about-portrait img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid rgba(201, 162, 79, .28);
+    }
+
+    @media(max-width:760px) {
+      .rvh-photo-section {
+        padding: 20px 0 0;
+      }
+
+      .rvh-about-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .rvh-about-portrait {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <style>
+    /* RVH nieuwsafbeeldingen */
+    .rvh-news-cover {
+      display: block;
+      width: 100%;
+      height: 235px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 14px 14px 0 0
+    }
+
+    .rvh-news-card {
+      overflow: hidden
+    }
+
+    .rvh-news-article-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 720px;
+      object-fit: contain;
+      background: #0b0b0b;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin: 20px 0
+    }
+
+    .rvh-news-article-image.loft {
+      max-height: 540px
+    }
+
+    .rvh-news-image-link {
+      display: block;
+      cursor: zoom-in
+    }
+
+    .rvh-news-figure-caption {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: -10px;
+      margin-bottom: 22px
+    }
+
+    .rvh-news-photo-dialog {
+      max-width: min(96vw, 1300px);
+      max-height: 95vh;
+      background: #101010;
+      border: 1px solid #b6934b;
+      border-radius: 14px;
+      padding: 14px;
+      color: #fff
+    }
+
+    .rvh-news-photo-dialog::backdrop {
+      background: rgba(0, 0, 0, .9)
+    }
+
+    .rvh-news-photo-dialog img {
+      display: block;
+      max-width: 100%;
+      max-height: 82vh;
+      object-fit: contain;
+      margin: auto
+    }
+
+    .rvh-news-photo-dialog button {
+      float: right;
+      margin-bottom: 12px;
+      background: transparent;
+      color: #d4b56a;
+      border: 1px solid #d4b56a;
+      border-radius: 30px;
+      padding: 8px 15px;
+      cursor: pointer
+    }
+
+    @media(max-width:700px) {
+      .rvh-news-cover {
+        height: 190px
+      }
+
+      .rvh-news-article-image {
+        max-height: none
+      }
+    }
+  </style>
 </head>
-<body><header class="topbar">
-<div class="container navwrap"><a class="brand" href="index.html"><img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/></a>
-<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="news.html">Nieuws</a><a href="contact.html">Contact</a></nav><button class="menu" data-menu="">Menu</button>
-</div>
-</header><main><section class="pagehero rvh-news-hero"><div class="container"><p class="eyebrow">RVH Pigeons · Breeding Excellence</p><h1>Nieuws</h1><p>Blijf op de hoogte van nieuwe referenties, ontwikkelingen binnen ons kweekstation en andere aankondigingen.</p></div></section><section class="section"><div class="container"><div class="panel rvh-news-intro"><p class="eyebrow">Nieuws &amp; updates</p><h2>De volgende stappen van RVH Pigeons</h2><p>Van de verdere uitbouw van ons kweekstation tot prestaties van onze nakomelingen: hier delen we de belangrijkste ontwikkelingen.</p></div><div class="rvh-news-articles"><article class="rvh-news-article" id="nieuw-duivenhok"><div class="rvh-news-article-head"><span class="rvh-news-tag">Kweekstation</span><span class="rvh-news-number">01</span></div><h2>Plannen voor een nieuw duivenhok</h2><p>RVH Pigeons werkt aan plannen voor een nieuw duivenhok. Met deze uitbreiding willen we ons kweekstation verder ontwikkelen en de huisvesting van onze duiven optimaliseren.</p><p>Wanneer er meer nieuws is over de uitvoering, delen we hier de volgende stappen.</p></article><article class="rvh-news-article" id="referenties"><div class="rvh-news-article-head"><span class="rvh-news-tag">Referenties</span><span class="rvh-news-number">02</span></div><h2>Een veelbelovende start voor onze kweekbasis</h2><p>2026 is het eerste kweekjaar van RVH Pigeons. De resultaten van duiven uit onze kweekbasis bij andere liefhebbers geven ons alvast vertrouwen voor de toekomst.</p><p>Tot de opvallende prestaties behoren een 1e prijs tegen 1.087 duiven, een 3e provinciaal tegen 8.762 duiven en een 3e semi-provinciaal tegen 4.756 duiven.</p><a class="btn ghost" href="references.html">Ontdek onze referenties</a></article></div></div></section></main><footer class="sitefooter minimal-footer">
-<div class="container minimal-footer-grid">
-<div class="minimal-footer-brand">
-<div class="gold-line"></div>
-<div>
-<h2>RVH Pigeons</h2>
-<p class="footer-slogan">Breeding Excellence</p>
-<p>Een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en internationale topbloedlijnen.</p>
-<p class="footer-location">Ressegem, België</p>
-</div>
-</div>
-<div class="minimal-footer-column">
-<h3>Contact</h3>
-<a href="tel:+32479014062">0479 01 40 62</a>
-<a href="mailto:info@rvhpigeons.com">info@rvhpigeons.com</a>
-<a href="contact.html">Contactformulier</a>
-</div>
-<div class="minimal-footer-column">
-<h3>Snel naar</h3>
-<a href="elite.html">Elite Collection</a>
-<a href="collection.html">Kweekbasis</a>
-<a href="bloodlines.html">Bloedlijnen</a>
-<a href="references.html">Referenties</a>
-<a href="news.html">Nieuws</a></div>
-</div>
-<div class="container minimal-footer-bottom">
-<span>© 2025 RVH Pigeons</span>
-<span>Breeding Excellence</span>
-</div>
-</footer></body>
+
+<body>
+  <header class="topbar">
+    <div class="container navwrap"><a class="brand" href="index.html"><img alt="RVH Pigeons"
+          src="assets/logo/rvh-logo.png" /></a>
+      <nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite
+          Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a
+          href="references.html">Referenties</a><a href="news.html">Nieuws</a><a href="contact.html">Contact</a></nav>
+      <button class="menu" data-menu="">Menu</button>
+    </div>
+  </header>
+  <main>
+    <section class="pagehero rvh-news-hero">
+      <div class="container">
+        <p class="eyebrow">RVH Pigeons · Breeding Excellence</p>
+        <h1>Nieuws</h1>
+        <p>Blijf op de hoogte van nieuwe referenties, ontwikkelingen binnen ons kweekstation en andere aankondigingen.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="panel rvh-news-intro">
+          <p class="eyebrow">Nieuws &amp; updates</p>
+          <h2>De volgende stappen van RVH Pigeons</h2>
+          <p>Van de verdere uitbouw van ons kweekstation tot prestaties van onze nakomelingen: hier delen we de
+            belangrijkste ontwikkelingen.</p>
+        </div>
+        <div class="rvh-news-articles">
+          <article class="rvh-news-article" id="referenties">
+            <div class="rvh-news-article-head"><span class="rvh-news-tag">Referenties</span><span
+                class="rvh-news-number">01</span></div>
+            <h2>Kweekresultaten 2026 – Een sterk eerste seizoen</h2><a aria-label="Bekijk afbeelding op groot formaat"
+              class="rvh-news-image-link"
+              data-rvh-alt="Top 10-overzicht van de referentieresultaten van RVH Pigeons in 2026."
+              data-rvh-photo="assets/news/referenties-2026.jpeg" href="assets/news/referenties-2026.jpeg"><img
+                alt="Top 10-overzicht van de referentieresultaten van RVH Pigeons in 2026."
+                class="rvh-news-article-image" loading="lazy" src="assets/news/referenties-2026.jpeg" /></a>
+            <p class="rvh-news-figure-caption">Klik op de afbeelding om ze groter te bekijken.</p>
+            <p>2026 leverde meteen mooie prestaties op bij verschillende liefhebbers die met nakomelingen uit onze
+              kweekbasis spelen. In het overzicht hieronder bundelen we de uitslagen waarbij deze duiven zich bij de
+              eerste tien van hun wedstrijd klasseerden.</p>
+            <p>Met <strong>32 top-10-noteringen</strong>, <strong>7 overwinningen</strong> en <strong>12
+                referentieduiven</strong> zijn dit resultaten die vertrouwen geven in de toekomst van onze kweekbasis.
+            </p>
+            <p>Van Quiévrain tot Orléans: het is bijzonder motiverend om onze duiven bij andere liefhebbers te zien
+              presteren. Bedankt aan iedereen die met onze duiven aan de start verschijnt en deze resultaten mogelijk
+              maakt.</p><a class="btn ghost" href="references.html">Ontdek onze referenties</a>
+          </article>
+          <article class="rvh-news-article" id="nieuw-duivenhok">
+            <div class="rvh-news-article-head"><span class="rvh-news-tag">Kweekstation</span><span
+                class="rvh-news-number">02</span></div>
+            <h2>Het nieuwe kweekstation krijgt vorm</h2><a aria-label="Bekijk afbeelding op groot formaat"
+              class="rvh-news-image-link" data-rvh-alt="3D-ontwerp van het geplande nieuwe duivenhok."
+              data-rvh-photo="assets/news/ontwerp-duivenhok.jpg" href="assets/news/ontwerp-duivenhok.jpg"><img
+                alt="3D-ontwerp van het geplande nieuwe duivenhok." class="rvh-news-article-image loft" loading="lazy"
+                src="assets/news/ontwerp-duivenhok.jpg" /></a>
+            <p class="rvh-news-figure-caption">Klik op de afbeelding om ze groter te bekijken.</p>
+            <p>Bij RVH Pigeons kijken we niet alleen naar de prestaties van vandaag, maar bouwen we ook aan de toekomst.
+              Dit ontwerp toont hoe we ons nieuwe duivenhok voor ogen hebben.</p>
+            <p>De geplande indeling combineert afzonderlijke afdelingen met volières, met aandacht voor een praktische
+              werking en een goede huisvesting van de duiven. Het is een volgende stap in de verdere ontwikkeling van
+              ons kweekstation.</p>
+            <p><strong>Dit is een ontwerp.</strong> De realisatie volgt later; zodra er concrete vooruitgang is, delen
+              we die hier. De vergunning is reeds aangevraagd.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="sitefooter minimal-footer">
+    <div class="container minimal-footer-grid">
+      <div class="minimal-footer-brand">
+        <div class="gold-line"></div>
+        <div>
+          <h2>RVH Pigeons</h2>
+          <p class="footer-slogan">Breeding Excellence</p>
+          <p>Een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en internationale topbloedlijnen.
+          </p>
+          <p class="footer-location">Ressegem, België</p>
+        </div>
+      </div>
+      <div class="minimal-footer-column">
+        <h3>Contact</h3>
+        <a href="tel:+32479014062">0479 01 40 62</a>
+        <a href="mailto:info@rvhpigeons.com">info@rvhpigeons.com</a>
+        <a href="contact.html">Contactformulier</a>
+      </div>
+      <div class="minimal-footer-column">
+        <h3>Snel naar</h3>
+        <a href="elite.html">Elite Collection</a>
+        <a href="collection.html">Kweekbasis</a>
+        <a href="bloodlines.html">Bloedlijnen</a>
+        <a href="references.html">Referenties</a>
+        <a href="news.html">Nieuws</a>
+      </div>
+    </div>
+    <div class="container minimal-footer-bottom">
+      <span>© 2025 RVH Pigeons</span>
+      <span>Breeding Excellence</span>
+    </div>
+  </footer>
+  <dialog class="rvh-news-photo-dialog" id="rvh-news-photo-dialog"><button id="rvh-news-photo-close"
+      type="button">Sluiten ✕</button><img alt="Vergrote afbeelding" id="rvh-news-photo-full" /></dialog>
+  <script>(function () {const d = document.getElementById('rvh-news-photo-dialog'); const im = document.getElementById('rvh-news-photo-full'); document.querySelectorAll('[data-rvh-photo]').forEach(a => a.addEventListener('click', e => {if (!d.showModal) return; e.preventDefault(); im.src = a.dataset.rvhPhoto; im.alt = a.dataset.rvhAlt || 'Afbeelding'; d.showModal()})); document.getElementById('rvh-news-photo-close').addEventListener('click', () => d.close()); d.addEventListener('click', e => {if (e.target === d) d.close()}); d.addEventListener('close', () => im.removeAttribute('src'))})();</script>
+</body>
+
 </html>

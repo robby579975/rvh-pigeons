@@ -151,9 +151,30 @@
 @media(max-width:760px) { .rvh-photo-section { padding:20px 0 0; } .rvh-about-layout { grid-template-columns:1fr; } .rvh-about-portrait { max-width:500px; margin:0 auto; } }
 </style>
 <style>
-/* Missie zonder zijfoto */
-.section .rvh-mission-panel {max-width: 960px; margin-inline: auto;}
-</style><style>@media (min-width: 981px){.rvh-news-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}</style></head>
+/* Missie: brede tweekolomsindeling zonder losstaand kader */
+.rvh-mission-section{padding-top:76px;padding-bottom:76px}
+.rvh-mission-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(35px,6vw,100px);align-items:center}
+.rvh-mission-copy h2{font-family:Georgia,serif;font-size:clamp(34px,4vw,55px);line-height:1.12;margin:10px 0 22px}
+.rvh-mission-copy>p:last-child{max-width:650px;color:var(--muted);line-height:1.8;margin-bottom:0}
+.rvh-mission-values{display:grid;gap:0;border-top:1px solid rgba(201,162,79,.4)}
+.rvh-mission-value{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:center;padding:24px 0;border-bottom:1px solid rgba(201,162,79,.4)}
+.rvh-mission-value span{font-family:Georgia,serif;font-size:24px;color:var(--gold2)}
+.rvh-mission-value p{margin:0;line-height:1.55}
+@media(max-width:760px){.rvh-mission-section{padding-top:48px;padding-bottom:48px}.rvh-mission-layout{grid-template-columns:1fr;gap:30px}.rvh-mission-value{padding:18px 0}}
+</style><style>@media (min-width: 981px){.rvh-news-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}</style><style>
+/* RVH nieuwsafbeeldingen */
+.rvh-news-cover{display:block;width:100%;height:235px;object-fit:cover;object-position:top center;border-radius:14px 14px 0 0}
+.rvh-news-card{overflow:hidden}
+.rvh-news-article-image{display:block;width:100%;height:auto;max-height:720px;object-fit:contain;background:#0b0b0b;border:1px solid var(--line);border-radius:14px;margin:20px 0}
+.rvh-news-article-image.loft{max-height:540px}
+.rvh-news-image-link{display:block;cursor:zoom-in}
+.rvh-news-figure-caption{font-size:13px;color:var(--muted);margin-top:-10px;margin-bottom:22px}
+.rvh-news-photo-dialog{max-width:min(96vw,1300px);max-height:95vh;background:#101010;border:1px solid #b6934b;border-radius:14px;padding:14px;color:#fff}
+.rvh-news-photo-dialog::backdrop{background:rgba(0,0,0,.9)}
+.rvh-news-photo-dialog img{display:block;max-width:100%;max-height:82vh;object-fit:contain;margin:auto}
+.rvh-news-photo-dialog button{float:right;margin-bottom:12px;background:transparent;color:#d4b56a;border:1px solid #d4b56a;border-radius:30px;padding:8px 15px;cursor:pointer}
+@media(max-width:700px){.rvh-news-cover{height:190px}.rvh-news-article-image{max-height:none}}
+</style></head>
 <body>
 <header class="topbar">
 <div class="container navwrap"><a class="brand" href="index.html"><img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/></a>
@@ -180,23 +201,21 @@
 <img alt="Robby Van Herreweghe met een duif voor het duivenhok van RVH Pigeons" class="rvh-photo-wide" fetchpriority="high" height="928" src="assets/images/site/robby-duivenhok.webp" width="1648"/>
 </div>
 </section>
-<section class="section">
-<div class="container">
-<div class="panel rvh-mission-panel">
-<p class="eyebrow">Missie</p>
-<h2>Kwaliteit boven kwantiteit.</h2>
-<p>RVH Pigeons staat voor een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en
-          internationale topbloedlijnen. Elke duif wordt geselecteerd met één doel: duurzame kwaliteit
-          doorgeven aan de volgende generatie.</p>
-<div class="bullets">
-<div>Alleen duiven die 100% overtuigen krijgen een plaats.</div>
-<div>Elke selectie gebeurt met het oog op kweekwaarde, karakter en toekomst.</div>
-<div>Breeding Excellence is geen slogan, maar de basis van alles wat we doen.</div>
+<section class="section rvh-mission-section" aria-labelledby="rvh-mission-title">
+<div class="container rvh-mission-layout">
+<div class="rvh-mission-copy">
+<p class="eyebrow">Onze missie</p>
+<h2 id="rvh-mission-title">Kwaliteit boven kwantiteit.</h2>
+<p>RVH Pigeons staat voor een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en internationale topbloedlijnen. Elke duif wordt geselecteerd met één doel: duurzame kwaliteit doorgeven aan de volgende generatie.</p>
 </div>
+<div class="rvh-mission-values" aria-label="Onze kernwaarden">
+<div class="rvh-mission-value"><span>01</span><p>Alleen duiven die 100% overtuigen krijgen een plaats.</p></div>
+<div class="rvh-mission-value"><span>02</span><p>Elke selectie gebeurt met het oog op kweekwaarde, karakter en toekomst.</p></div>
+<div class="rvh-mission-value"><span>03</span><p>Breeding Excellence is geen slogan, maar de basis van alles wat we doen.</p></div>
 </div>
 </div>
 </section>
-<section aria-labelledby="home-news-title" class="section rvh-news-home"><div class="container"><div class="title"><div><p class="eyebrow">RVH Pigeons</p><h2 id="home-news-title">Laatste nieuws</h2></div><p>Nieuwe referenties en ontwikkelingen binnen ons kweekstation.</p></div><div class="rvh-news-grid"><article class="rvh-news-card"><div class="rvh-news-visual"><span>01</span><strong>Kweekstation</strong></div><div class="rvh-news-pad"><span class="rvh-news-tag">Kweekstation</span><h3>Plannen voor een nieuw duivenhok</h3><p>Een volgende stap in de verdere uitbouw van RVH Pigeons.</p><a class="rvh-news-more" href="news.html#nieuw-duivenhok">Lees meer <span aria-hidden="true">→</span></a></div></article><article class="rvh-news-card"><div class="rvh-news-visual"><span>02</span><strong>Referenties</strong></div><div class="rvh-news-pad"><span class="rvh-news-tag">Referenties</span><h3>Een veelbelovende start</h3><p>De eerste resultaten bij andere liefhebbers tonen het potentieel van onze kweekbasis.</p><a class="rvh-news-more" href="news.html#referenties">Lees meer <span aria-hidden="true">→</span></a></div></article></div><div class="rvh-news-all"><a class="btn ghost" href="news.html">Bekijk alle nieuwsberichten</a></div></div></section><section class="section alt">
+<section aria-labelledby="home-news-title" class="section rvh-news-home"><div class="container"><div class="title"><div><p class="eyebrow">RVH Pigeons</p><h2 id="home-news-title">Laatste nieuws</h2></div><p>Nieuwe referenties en ontwikkelingen binnen ons kweekstation.</p></div><div class="rvh-news-grid"><article class="rvh-news-card"><a aria-label="Lees meer over Kweekresultaten 2026 – Een sterk eerste seizoen" href="news.html#referenties"><img alt="Kweekresultaten 2026 – Een sterk eerste seizoen" class="rvh-news-cover" loading="lazy" src="assets/news/referenties-2026.jpeg"/></a><div class="rvh-news-pad"><span class="rvh-news-tag">Referenties</span><h3>Kweekresultaten 2026 – Een sterk eerste seizoen</h3><p>32 top-10-noteringen, 7 overwinningen en 12 referentieduiven bij andere liefhebbers.</p><a class="rvh-news-more" href="news.html#referenties">Lees meer <span aria-hidden="true">→</span></a></div></article><article class="rvh-news-card"><a aria-label="Lees meer over Het nieuwe kweekstation krijgt vorm" href="news.html#nieuw-duivenhok"><img alt="Het nieuwe kweekstation krijgt vorm" class="rvh-news-cover" loading="lazy" src="assets/news/ontwerp-duivenhok.jpg"/></a><div class="rvh-news-pad"><span class="rvh-news-tag">Kweekstation</span><h3>Het nieuwe kweekstation krijgt vorm</h3><p>Ontdek het ontwerp van het toekomstige duivenhok van RVH Pigeons.</p><a class="rvh-news-more" href="news.html#nieuw-duivenhok">Lees meer <span aria-hidden="true">→</span></a></div></article></div><div class="rvh-news-all"><a class="btn ghost" href="news.html">Bekijk alle nieuwsberichten</a></div></div></section><section class="section alt">
 <div class="container">
 <div class="title">
 <h2>Elite Collection</h2>
