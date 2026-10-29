@@ -121,7 +121,6 @@
       }
     }
   </style>
-
 <style>
   .family-band > .bloodline-link {
     display: block;
@@ -151,11 +150,14 @@
 .rvh-about-portrait img { display:block; width:100%; height:auto; border-radius:14px; border:1px solid rgba(201,162,79,.28); }
 @media(max-width:760px) { .rvh-photo-section { padding:20px 0 0; } .rvh-about-layout { grid-template-columns:1fr; } .rvh-about-portrait { max-width:500px; margin:0 auto; } }
 </style>
-</head>
+<style>
+/* Missie zonder zijfoto */
+.section .rvh-mission-panel {max-width: 960px; margin-inline: auto;}
+</style><style>@media (min-width: 981px){.rvh-news-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}</style></head>
 <body>
 <header class="topbar">
 <div class="container navwrap"><a class="brand" href="index.html"><img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/></a>
-<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="contact.html">Contact</a></nav><button class="menu" data-menu="">Menu</button>
+<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="news.html">Nieuws</a><a href="contact.html">Contact</a></nav><button class="menu" data-menu="">Menu</button>
 </div>
 </header>
 <section class="hero">
@@ -173,14 +175,14 @@
 </div>
 </div>
 </section>
-<section class="rvh-photo-section" aria-label="RVH Pigeons kweekstation">
+<section aria-label="RVH Pigeons kweekstation" class="rvh-photo-section">
 <div class="container">
-<img class="rvh-photo-wide" src="assets/images/site/robby-duivenhok.webp" alt="Robby Van Herreweghe met een duif voor het duivenhok van RVH Pigeons" width="1648" height="928" fetchpriority="high"/>
+<img alt="Robby Van Herreweghe met een duif voor het duivenhok van RVH Pigeons" class="rvh-photo-wide" fetchpriority="high" height="928" src="assets/images/site/robby-duivenhok.webp" width="1648"/>
 </div>
 </section>
 <section class="section">
-<div class="container split">
-<div class="panel">
+<div class="container">
+<div class="panel rvh-mission-panel">
 <p class="eyebrow">Missie</p>
 <h2>Kwaliteit boven kwantiteit.</h2>
 <p>RVH Pigeons staat voor een doordacht opgebouwd kweekprogramma, gebaseerd op bewezen nationale en
@@ -191,10 +193,10 @@
 <div>Elke selectie gebeurt met het oog op kweekwaarde, karakter en toekomst.</div>
 <div>Breeding Excellence is geen slogan, maar de basis van alles wat we doen.</div>
 </div>
-</div><img alt="Méchant" class="card" src="assets/images/pigeons/mechant.jpg"/>
+</div>
 </div>
 </section>
-<section class="section alt">
+<section aria-labelledby="home-news-title" class="section rvh-news-home"><div class="container"><div class="title"><div><p class="eyebrow">RVH Pigeons</p><h2 id="home-news-title">Laatste nieuws</h2></div><p>Nieuwe referenties en ontwikkelingen binnen ons kweekstation.</p></div><div class="rvh-news-grid"><article class="rvh-news-card"><div class="rvh-news-visual"><span>01</span><strong>Kweekstation</strong></div><div class="rvh-news-pad"><span class="rvh-news-tag">Kweekstation</span><h3>Plannen voor een nieuw duivenhok</h3><p>Een volgende stap in de verdere uitbouw van RVH Pigeons.</p><a class="rvh-news-more" href="news.html#nieuw-duivenhok">Lees meer <span aria-hidden="true">→</span></a></div></article><article class="rvh-news-card"><div class="rvh-news-visual"><span>02</span><strong>Referenties</strong></div><div class="rvh-news-pad"><span class="rvh-news-tag">Referenties</span><h3>Een veelbelovende start</h3><p>De eerste resultaten bij andere liefhebbers tonen het potentieel van onze kweekbasis.</p><a class="rvh-news-more" href="news.html#referenties">Lees meer <span aria-hidden="true">→</span></a></div></article></div><div class="rvh-news-all"><a class="btn ghost" href="news.html">Bekijk alle nieuwsberichten</a></div></div></section><section class="section alt">
 <div class="container">
 <div class="title">
 <h2>Elite Collection</h2>
@@ -320,7 +322,7 @@
 <a href="collection.html">Kweekbasis</a>
 <a href="bloodlines.html">Bloedlijnen</a>
 <a href="references.html">Referenties</a>
-</div>
+<a href="news.html">Nieuws</a></div>
 </div>
 <div class="container minimal-footer-bottom">
 <span>© 2025 RVH Pigeons</span>

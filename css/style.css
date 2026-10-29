@@ -110,3 +110,64 @@
   .minimal-footer-grid{grid-template-columns:1fr;}
   .minimal-footer-bottom{flex-direction:column;}
 }
+
+/* Nieuws - RVH Pigeons */
+.rvh-news-home{background:linear-gradient(180deg,#090909,#12100d,#070707)}
+.rvh-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.rvh-news-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),#0c0c0c);transition:transform .25s,border-color .25s}
+.rvh-news-card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.rvh-news-visual{height:156px;padding:22px;background:radial-gradient(circle at 85% 20%,rgba(201,162,79,.20),transparent 65%),linear-gradient(135deg,#1b1812,#090909);display:flex;align-items:end;justify-content:space-between;border-bottom:1px solid var(--line)}
+.rvh-news-visual span{font:italic 64px Georgia,serif;color:rgba(201,162,79,.25);line-height:1}
+.rvh-news-visual strong{color:var(--gold2);font:22px Georgia,serif}
+.rvh-news-pad{padding:26px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.rvh-news-tag{display:inline-block;color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.rvh-news-pad h3{font:27px/1.2 Georgia,serif;margin:14px 0}
+.rvh-news-pad p{color:var(--muted);margin:0 0 22px}
+.rvh-news-more{margin-top:auto;color:var(--gold);font-weight:700;text-decoration:none}
+.rvh-news-more:hover{text-decoration:underline}
+.rvh-news-all{text-align:center;margin-top:34px}
+.rvh-news-hero h1{font-size:clamp(54px,9vw,110px)}
+.rvh-news-intro{margin-bottom:34px}
+.rvh-news-intro h2{font-size:clamp(32px,4vw,54px)}
+.rvh-news-articles{display:grid;gap:24px}
+.rvh-news-article{scroll-margin-top:115px;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,48px);background:linear-gradient(140deg,#191714,#0d0d0d)}
+.rvh-news-article-head{display:flex;align-items:center;justify-content:space-between}
+.rvh-news-number{font:italic 42px Georgia,serif;color:rgba(201,162,79,.35)}
+.rvh-news-article h2{font:clamp(28px,3.4vw,46px)/1.14 Georgia,serif;margin:12px 0 20px}
+.rvh-news-article p{color:var(--muted);max-width:850px}
+.rvh-news-article .btn{margin-top:14px}
+@media(max-width:980px){.rvh-news-grid{grid-template-columns:1fr}.rvh-news-visual{height:125px}}
+
+
+/* Compacte kweekresultaten */
+#nakomelingen,#stamboom{scroll-margin-top:115px}
+.offspring-summary{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 24px}
+.offspring-stat{border:1px solid var(--line);border-radius:16px;padding:15px 22px;background:#141414;min-width:155px}
+.offspring-stat strong{display:block;color:var(--gold2);font-size:25px;line-height:1.2}
+.offspring-stat span{font-size:13px;color:var(--muted)}
+.offspring-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#111}
+.offspring-table{border-collapse:collapse;width:100%;min-width:540px;text-align:left}
+.offspring-table th,.offspring-table td{padding:15px 18px;border-bottom:1px solid var(--soft);vertical-align:top}
+.offspring-table th{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:1.3px}
+.offspring-table tr:last-child td{border-bottom:0}
+.offspring-table a{color:var(--gold2);font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.offspring-table a:hover{color:var(--gold)}
+.offspring-expand{margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:0 18px;background:#141414}
+.offspring-expand summary{cursor:pointer;padding:16px 0;color:var(--gold2);font-weight:800}
+.offspring-expand[open] summary{border-bottom:1px solid var(--soft)}
+.offspring-expand .offspring-table-wrap{margin:16px 0}
+
+/* Drie gelijke actieknoppen naast elkaar */
+.profile-actions-three{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:stretch;justify-content:stretch!important}
+.profile-actions-three .btn{width:100%;min-width:0;min-height:52px;padding:11px 8px;text-align:center;font-size:clamp(11px,1.1vw,14px);line-height:1.25;white-space:normal}
+@media(max-width:540px){.profile-actions-three{gap:5px}.profile-actions-three .btn{font-size:10px;padding:10px 3px;letter-spacing:-.2px}}
+
+
+/* Uniforme ficheknoppen en werkende uitklapbare kweekresultaten */
+.profile-action-row{display:grid!important;grid-template-columns:repeat(var(--action-count,2),minmax(0,1fr))!important;gap:10px!important;align-items:stretch!important;justify-content:stretch!important;flex-wrap:nowrap!important;width:100%;}
+.profile-action-row>.btn{display:flex;width:100%;min-width:0;min-height:52px;box-sizing:border-box;padding:10px 7px;text-align:center;white-space:normal;line-height:1.25;font-size:clamp(10px,1.05vw,14px);}
+.offspring-expand,.offspring-details{display:block;margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:0 18px;background:#141414;}
+.offspring-expand>summary,.offspring-details>summary{display:list-item;cursor:pointer;padding:16px 0;color:var(--gold2);font-weight:800;list-style-position:inside;}
+.offspring-expand[open]>summary,.offspring-details[open]>summary{border-bottom:1px solid var(--soft);}
+.offspring-expand>.offspring-table-wrap,.offspring-details>.offspring-table-wrap{margin:16px 0;}
+@media(max-width:540px){.profile-action-row{gap:5px!important}.profile-action-row>.btn{font-size:10px;padding:9px 3px;letter-spacing:-.2px;}}

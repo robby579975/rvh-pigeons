@@ -7,11 +7,34 @@
 <title>Baloe | RVH Pigeons</title>
 <link href="css/style.css" rel="stylesheet"/>
 <script defer="" src="js/app.js"></script>
-</head>
+<style>
+/* Compacte kweekresultaten */
+#nakomelingen,#stamboom{scroll-margin-top:115px}
+.offspring-summary{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 24px}
+.offspring-stat{border:1px solid var(--line);border-radius:16px;padding:15px 22px;background:#141414;min-width:155px}
+.offspring-stat strong{display:block;color:var(--gold2);font-size:25px;line-height:1.2}
+.offspring-stat span{font-size:13px;color:var(--muted)}
+.offspring-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#111}
+.offspring-table{border-collapse:collapse;width:100%;min-width:540px;text-align:left}
+.offspring-table th,.offspring-table td{padding:15px 18px;border-bottom:1px solid var(--soft);vertical-align:top}
+.offspring-table th{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:1.3px}
+.offspring-table tr:last-child td{border-bottom:0}
+.offspring-table a{color:var(--gold2);font-weight:800;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.offspring-table a:hover{color:var(--gold)}
+.offspring-expand{margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:0 18px;background:#141414}
+.offspring-expand summary{cursor:pointer;padding:16px 0;color:var(--gold2);font-weight:800}
+.offspring-expand[open] summary{border-bottom:1px solid var(--soft)}
+.offspring-expand .offspring-table-wrap{margin:16px 0}
+
+/* Drie gelijke actieknoppen naast elkaar */
+.profile-actions-three{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:stretch;justify-content:stretch!important}
+.profile-actions-three .btn{width:100%;min-width:0;min-height:52px;padding:11px 8px;text-align:center;font-size:clamp(11px,1.1vw,14px);line-height:1.25;white-space:normal}
+@media(max-width:540px){.profile-actions-three{gap:5px}.profile-actions-three .btn{font-size:10px;padding:10px 3px;letter-spacing:-.2px}}
+</style></head>
 <body>
 <header class="topbar">
 <div class="container navwrap"><a class="brand" href="index.html"><img alt="RVH Pigeons" src="assets/logo/rvh-logo.png"/></a>
-<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="contact.html">Contact</a></nav><button class="menu" data-menu="">Menu</button>
+<nav class="nav"><a href="index.html">Home</a><a href="about.html">Over RVH</a><a href="elite.html">Elite Collection</a><a href="collection.html">Kweekbasis</a><a href="bloodlines.html">Bloedlijnen</a><a href="references.html">Referenties</a><a href="news.html">Nieuws</a><a href="contact.html">Contact</a></nav><button class="menu" data-menu="">Menu</button>
 </div>
 </header>
 <section class="pagehero">
@@ -47,8 +70,8 @@
 <div><strong>Waarom deze duif?</strong><br/>Hij werd geselecteerd om de kweekbasis te versterken
                             met Goed Grijs, Ace 820, Viton, Indy en Triggerfinger-invloeden.</div>
 </div>
-<div class="actions" style="justify-content:flex-start;margin-top:24px"><a class="btn" href="contact.html">Vraag informatie</a><a class="btn ghost" href="#stamboom">Bekijk
-                            stamboom</a></div>
+<div class="actions profile-actions-three profile-action-row" style="--action-count:3;margin-top:24px"><a class="btn" href="contact.html">Vraag informatie</a><a class="btn ghost" href="#stamboom">Bekijk
+                            stamboom</a><a class="btn ghost" href="#nakomelingen">Kweekresultaten</a></div>
 </div>
 </div>
 </div>
@@ -72,8 +95,10 @@
 </div>
 <div class="pedigree-card"><img alt="Stamboom Baloe" src="assets/images/pedigrees/baloe.webp"/></div>
 </div>
-</section>
-
+</section><section class="section alt" id="nakomelingen"><div class="container"><div class="title"><div><p class="eyebrow">Resultaten bij andere liefhebbers</p><h2>Bewezen nakomelingen</h2><p>Een overzicht van de prestaties van jongen uit deze kweekduif.</p></div></div>
+<div class="offspring-table-wrap"><table class="offspring-table"><thead><tr><th>Ringnummer</th><th>Vlucht</th><th>Club / lokaal</th><th>Groter verband</th></tr></thead><tbody><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Pont (189 km)</td><td>2 / 688</td><td>74 / 4.925</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>1 / 250</td><td>4 / 4.715</td></tr><tr><td><a href="references.html#ref-be26-4034167" title="Bekijk BE26-4034167 bij de referenties">BE26-4034167</a></td><td>Pont (189 km)</td><td>7 / 688</td><td>149 / 4.925</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>1 / 97</td><td>17 / 3.320</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>3 / 147</td><td>123 / 6.190</td></tr></tbody></table></div>
+<details class="offspring-expand"><summary>Bekijk alle resultaten</summary><div class="offspring-table-wrap"><table class="offspring-table"><thead><tr><th>Ringnummer</th><th>Vlucht</th><th>Club / lokaal</th><th>Groter verband</th></tr></thead><tbody><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>1 / 250</td><td>4 / 4.715</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>1 / 97</td><td>17 / 3.320</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Pont (189 km)</td><td>2 / 688</td><td>74 / 4.925</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>3 / 147</td><td>123 / 6.190</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Noyon (151 km)</td><td>5 / 64</td><td>125 / 2.399</td></tr><tr><td><a href="references.html#ref-be26-4034167" title="Bekijk BE26-4034167 bij de referenties">BE26-4034167</a></td><td>Pont (189 km)</td><td>7 / 688</td><td>149 / 4.925</td></tr><tr><td><a href="references.html#ref-be26-4034167" title="Bekijk BE26-4034167 bij de referenties">BE26-4034167</a></td><td>Noyon (151 km)</td><td>8 / 97</td><td>204 / 3.320</td></tr><tr><td><a href="references.html#ref-be26-4034125" title="Bekijk BE26-4034125 bij de referenties">BE26-4034125</a></td><td>Clermont (187 km)</td><td>18 / 306</td><td>35 / 1.308</td></tr><tr><td><a href="references.html#ref-be26-4034167" title="Bekijk BE26-4034167 bij de referenties">BE26-4034167</a></td><td>Orléans (344 km)</td><td>19 / 184</td><td>872 / 10.180</td></tr><tr><td><a href="references.html#ref-be26-4034167" title="Bekijk BE26-4034167 bij de referenties">BE26-4034167</a></td><td>Noyon (151 km)</td><td>29 / 772</td><td>153 / 7.458</td></tr></tbody></table></div><p style="color:var(--muted);font-size:14px">Klik op een ringnummer om rechtstreeks naar de duif op de referentiepagina te gaan.</p></details>
+</div></section>
 <footer class="sitefooter minimal-footer">
 <div class="container minimal-footer-grid">
 <div class="minimal-footer-brand">
@@ -97,6 +122,7 @@
 <a href="collection.html">Kweekbasis</a>
 <a href="bloodlines.html">Bloedlijnen</a>
 <a href="references.html">Referenties</a>
+<a href="news.html">Nieuws</a>
 </div>
 </div>
 <div class="container minimal-footer-bottom">
@@ -104,6 +130,5 @@
 <span>Breeding Excellence</span>
 </div>
 </footer>
-
 </body>
 </html>
